@@ -1,0 +1,55 @@
+/* millenial pinkish background, dashed blue border and sets monspace black text. look into border options and remove height attribute if neccessary */
+body {
+  background: #f5ccdd;
+  border: 15px dashed #0f47d4;
+  padding: 0;
+  margin: 0; color: #000000;
+  font-family: monospace;
+  height: 100%;
+}
+
+
+/* red centred header */
+.red-c {
+  text-align: center;
+  color: red;
+  letter-spacing: 2px;
+}
+
+/* red dotted horizontal rule */
+.red-dot {
+  border-top: 5px dotted red;
+  border-bottom: none;
+  width: 80%;
+}
+
+/* styles a white div box with red solid border. look into styling for mobile/tablet & add media query if required */ 
+.box-rw-c {
+  font-size: 1.2em;
+  border: 3px solid red;
+  border-radius: 20px;
+  background: white;
+  margin: 20px auto 20px auto;
+  width: 50%;
+  padding-bottom: 20px;
+  line-height: 1.75em;
+}
+
+/* this styles a large ascii header */
+.ascii-red {
+  font-family: "monospace";
+  white-space: pre;
+  text-align: center;
+  color: red;
+}
+
+/* this styles a standard link */
+a {
+  color: #0f47d4;
+  text-decoration: none;
+}
+
+/* this styles a link on mouseover - this may slow code down, look into it! */
+a:hover {
+  color: hotpink;
+}
