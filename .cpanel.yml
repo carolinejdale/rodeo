@@ -1,7 +1,9 @@
 ---
 deployment:
   tasks:
+  # The line below defines a DEPLOYPATH with a path to the document root of my website. I'll be able to use this in subsequent commands.
     - export DEPLOYPATH=/home/carorode/public_html/
+  # These subsequent commands copy ('cp') various files and folder to my website's document root as defined above.
     - /bin/cp -R .vscode $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
@@ -10,3 +12,4 @@ deployment:
     - /bin/cp -R js $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp styles.css $DEPLOYPATH
+    - /bin/cp directory.md $DEPLOYPATH
