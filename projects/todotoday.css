@@ -1,7 +1,7 @@
 body {
 	background: #FFFFFF;
 	text-align: center;
-  font-family: 'Inconsolata';
+  font-family: 'Inconsolata', monotype;
 }
 
 .intro {
@@ -65,6 +65,7 @@ ul {
 
 li {
 	list-style: none;
+	width: 80%;
 	padding: 10px 20px;
 	color: #000000;
 	text-transform: lowercase;
@@ -81,7 +82,7 @@ li {
 }
 
 li:hover {
-	border: 1px solid #51DF70;
+  border: 1px solid #51DF70;
   background-color: #000000;
   color: #FFFFFF;
 }
@@ -97,7 +98,7 @@ li > button {
 
 input {
 	border: 1px solid #000000;
-  border-radius: 5px;
+ 	border-radius: 5px;
 	min-width: 55%;
 	padding: 5px;
 	color: #76CFE0;
@@ -105,6 +106,7 @@ input {
 
 ::placeholder {
   color: #000000;
+  font-family: 'Inconsolata', monotype;
 }
 
 :focus {
