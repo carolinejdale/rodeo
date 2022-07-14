@@ -9,12 +9,6 @@ body {
 	font-weight: bold;
 }
 
-.container {
-  min-width: 60%;
-  max-width: 80%;
-  justify-content: center;
-}
-
 h1 {
 	color: #ffc9e4;
   text-transform: lowercase;
