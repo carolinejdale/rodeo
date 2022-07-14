@@ -8,6 +8,7 @@ deployment:
   # The first two commands copy the 'html' and 'css' directories to the document root.  '-R' copies the contents of a directory.
     - /bin/cp -R html $DEPLOYPATH
     - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R projects $DEPLOYPATH
   # These next commands copy indiviual files from the Git root to the document root.
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp styles.css $DEPLOYPATH
