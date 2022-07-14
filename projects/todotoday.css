@@ -11,6 +11,8 @@ body {
 	font-weight: bold;
 }
 
+
+
 h1 {
 	color: #ffc9e4;
   text-transform: lowercase;
@@ -44,9 +46,13 @@ p {
 }
 
 ul {
-	text-align: left;
-	margin: 20px 20% 20% 20px;
-  padding-inline-start: 0px;
+    text-align: left;
+    /* margin: 20px 20% 20% 20px; */
+    padding-inline-start: 0px;
+    margin-block-start: 1em;
+    margin-block-end: 5em;
+    margin-inline-start: 20%;
+    margin-inline-end: 20%;
 }
 
 
