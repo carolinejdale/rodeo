@@ -2,6 +2,8 @@ body {
 	background: #FFFFFF;
 	text-align: center;
   font-family: 'Inconsolata', monotype;
+  border: 10px dashed #ffc9e4;
+  padding-bottom: 0px;
 }
 
 .intro {
@@ -22,11 +24,10 @@ p {
 	font-weight: 400;
 }
 
-
 #enter {
 	border: 1px solid #000000;
-	padding: 5px 15px;
-	border-radius: 5px;
+	padding: 5px 10px 5px 10px;
+	border-radius: 50px;
 	color: #ffc9e4;
 	background-color: #000000;
 	transition: all 0.75s ease;
@@ -44,7 +45,8 @@ p {
 
 ul {
 	text-align: left;
-	margin-top: 20px;
+	margin: 20px 20% 20% 20px;
+  padding-inline-start: 0px;
 }
 
 
@@ -66,23 +68,25 @@ li {
 }
 
 li:hover {
-  border: 1px solid #51DF70;
+	border: 1px solid #51DF70;
   background-color: #000000;
   color: #FFFFFF;
 }
 
 li > button {
 	font-weight: normal;
-	background: none;
+	background: #ffc9e4;
+  border-radius: 50px;
 	border: none;
 	float: right;
 	color: #000000;
 	font-weight: 400;
 }
 
+
 input {
 	border: 1px solid #000000;
- 	border-radius: 5px;
+  border-radius: 5px;
 	min-width: 55%;
 	padding: 5px;
 	color: #76CFE0;
@@ -95,6 +99,7 @@ input {
 
 :focus {
  outline: 1px solid black;
+ color: white;
 }
 
 #userInput {
