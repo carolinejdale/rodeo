@@ -2,7 +2,6 @@ body {
 	background: #FFFFFF;
 	text-align: center;
   font-family: 'Inconsolata', monotype;
-  border: 10px dashed #ffc9e4;
   padding-bottom: 0px;
 }
 
@@ -89,10 +88,9 @@ li > button {
 	font-weight: 400;
 }
 
-
 input {
 	border: 1px solid #000000;
-  border-radius: 5px;
+ 	border-radius: 5px;
 	min-width: 55%;
 	padding: 5px;
 	color: #76CFE0;
@@ -106,6 +104,10 @@ input {
 :focus {
  outline: 1px solid black;
  color: white;
+}
+
+:focus::placeholder {
+	font-family: 'Inconsolata', monotype;
 }
 
 #userInput {
