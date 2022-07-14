@@ -9,6 +9,10 @@ body {
 	font-weight: bold;
 }
 
+.container {
+  min-width: 60%;
+  max-width: 80%;
+}
 
 h1 {
 	color: #ffc9e4;
@@ -23,20 +27,6 @@ p {
 	font-weight: 400;
 }
 
-#first {
-	margin-top: 10px;
-	color: #000000;
-}
-
-#second {
-	color: #000000;
-
-}
-
-#third {
-	color: #000000;
-	margin-bottom: 30px;
-}
 
 #enter {
 	border: 1px solid #000000;
