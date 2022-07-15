@@ -1,13 +1,22 @@
-/* millenial pinkish background, dashed blue border and sets monspace black text. look into border options and remove height attribute if neccessary */
+/* millenial pinkish background, dashed blue border and sets monospace black text. look into border options and remove height attribute if neccessary */
 body {
   background: #f5ccdd;
   border: 15px dashed #0f47d4;
   padding: 0;
   margin: 0; color: #000000;
   font-family: monospace;
-  height: 100%;
 }
 
+.mainnav {
+  display: inline-block;
+  justify-items: center;
+}
+
+/*
+.navlist {
+  display: inline-block;
+}
+*/
 
 /* red centred header */
 .red-c {
@@ -29,11 +38,16 @@ body {
   border: 3px solid red;
   border-radius: 20px;
   background: white;
-  margin: 20px auto 20px auto;
-  width: 50%;
-  padding-bottom: 20px;
+  margin: 20px 5px 20px 5px;
+  width: 60%;
+  padding: 20px 5px 20px 5px;
   line-height: 1.75em;
 }
+
+.boxcontent {
+  padding-left: 10px;
+}
+
 
 /* this styles a large ascii header */
 .ascii-red {
