@@ -1,28 +1,67 @@
 /* millenial pinkish background, dashed blue border and sets monospace black text. look into border options and remove height attribute if neccessary */
 body {
   background: #f5ccdd;
-  border: 15px dashed #0f47d4;
+  border-left: 15px dashed #0f47d4;
+  border-right: 15px dashed #0f47d4;
+  border-bottom: 15px dashed #0f47d4;
   padding: 0;
-  margin: 0; color: #000000;
+  margin: 0; 
+  color: #000000;
   font-family: monospace;
 }
 
-.mainnav {
-  display: inline-block;
-  justify-items: center;
+nav {
+  list-style-type: none;
+  background-color: yellow;
 }
 
-/*
-.navlist {
+ul.nav-list {
   display: inline-block;
+  /* list-style-type: none; */
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: yellow;
+  text-align: center;
+  color: red;
+  z-index: 1;
 }
-*/
+
+
+ul.nav-list > li {
+  display: inline-block;
+  font-size: 1.5em;
+  padding-right: 25px;
+  letter-spacing: 2pt
+}
+
+ul.nav-list > li:hover {
+  font-weight: bolder;
+  color: blue;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+  letter-spacing: 3pt;
+}
+
+.topheader {
+  position: absolute;
+  padding-top: 60px;
+  font-size: 28pt;
+}
 
 /* red centred header */
 .red-c {
   text-align: center;
   color: red;
-  letter-spacing: 2px;
+  letter-spacing: 2pt;
 }
 
 /* red dotted horizontal rule */
@@ -32,20 +71,43 @@ body {
   width: 80%;
 }
 
+p {
+  padding: 5px auto 5px auto;
+  font-size: 1.2em;
+}
+
+.intro {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resources {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* styles a white div box with red solid border. look into styling for mobile/tablet & add media query if required */ 
 .box-rw-c {
   font-size: 1.2em;
   border: 3px solid red;
   border-radius: 20px;
   background: white;
-  margin: 20px 5px 20px 5px;
+  margin: 20px auto 20px auto;
   width: 60%;
-  padding: 20px 5px 20px 5px;
+  padding: 20px auto 20px auto;
   line-height: 1.75em;
 }
 
-.boxcontent {
-  padding-left: 10px;
+.box-content {
+  
+}
+
+.link-list {
+  list-style-type: none;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
@@ -65,5 +127,12 @@ a {
 
 /* this styles a link on mouseover - this may slow code down, look into it! */
 a:hover {
-  color: hotpink;
+  color: red;
+}
+
+footer {
+  font-style: italic;
+  width: 80%;
+  margin: 40px auto 20px auto;
+  text-align: center;
 }
