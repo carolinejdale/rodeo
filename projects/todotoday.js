@@ -20,6 +20,10 @@ function listLength(){
 	return item.length;
 }
 
+// the snippet below is my attempt to persist the application state to the browser’s localstorage - I found it at https://freshman.tech/todo-list/ but am not sure i'm applying it where it ought to be
+localStorage.setItem('todoItemsRef', JSON.stringify(todoItems));
+// end of snippet from https://freshman.tech/todo-list/
+
 function createListElement() {
 	var li = document.createElement("li"); // creates an element "li"
 	li.appendChild(document.createTextNode(input.value)); //makes text from input field the li text
@@ -71,3 +75,14 @@ enterButton.addEventListener("click",addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
 
+// this code snippet is a continuation of my attempt to persist the application state to the browser’s localstorage - here i'm trying to render the saved to-do items. again, code & tutorial is from https://freshman.tech/todo-list/
+document.addEventListener('DOMContentLoaded', () => {
+  const ref = localStorage.getItem('todoItemsRef');
+  if (ref) {
+    todoItems = JSON.parse(ref);
+    todoItems.forEach(t => {
+      renderTodo(t);
+    });
+  }
+});
+// end of code snippet from https://freshman.tech/todo-list/
