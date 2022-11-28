@@ -57,7 +57,8 @@ li {
 	list-style: none;
 	padding: 10px 20px;
 	color: #000000;
-	text-transform: lowercase;
+/*	may reinstate this at a later date */
+/*	text-transform: lowercase; */
 	font-weight: 400;
 	border: 1px solid #000000;
 	border-radius: 5px;
