@@ -1,9 +1,10 @@
 # caro.rodeo
 
 ## To Do
-+ Review index.html
-+ Outline a basic site architecture
-+ Complete FreeCodeCamp web design projects and upload
++ Create projects page with recent work
++ Create bio page
++ Create CV
++ Update index.html and styles.css with improved layout once content is in place.
 
 ## Resources
 + [CodePen](http://www.codepen.io)
