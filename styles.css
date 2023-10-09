@@ -1,138 +1,199 @@
-/* millenial pinkish background, dashed blue border and sets monospace black text. look into border options and remove height attribute if neccessary */
-body {
-  background: #f5ccdd;
-  border-left: 15px dashed #0f47d4;
-  border-right: 15px dashed #0f47d4;
-  border-bottom: 15px dashed #0f47d4;
-  padding: 0;
-  margin: 0; 
-  color: #000000;
-  font-family: monospace;
-}
-
-nav {
-  list-style-type: none;
-  background-color: yellow;
-}
-
-ul.nav-list {
-  display: inline-block;
-  /* list-style-type: none; */
-  margin: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: yellow;
-  text-align: center;
-  color: red;
-  z-index: 1;
-}
-
-
-ul.nav-list > li {
-  display: inline-block;
-  font-size: 1.5em;
-  padding-right: 25px;
-  letter-spacing: 2pt
-}
-
-ul.nav-list > li:hover {
-  font-weight: bolder;
-  color: blue;
-}
-
 h1 {
-  text-transform: uppercase;
-  text-align: center;
-  color: red;
-  letter-spacing: 3pt;
-}
-
-.topheader {
-  position: absolute;
-  padding-top: 60px;
-  font-size: 28pt;
-}
-
-/* red centred header */
-.red-c {
-  text-align: center;
-  color: red;
-  letter-spacing: 2pt;
-}
-
-/* red dotted horizontal rule */
-.red-dot {
-  border-top: 5px dotted red;
-  border-bottom: none;
-  width: 80%;
+    font-family: 'Inconsolata';
+    font-size: 1.5rem;
+    font-weight: 200;
 }
 
 p {
-  padding: 5px auto 5px auto;
-  font-size: 1.2em;
+    font-family: 'Inconsolata';
+    font-size: 1.1rem;
+    font-weight: 200;
 }
 
-.intro {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+/* revert to this once flag menu is added */
+/* a {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: 0.3ch;
+}
+*/
+
+nav {
+    width: 100%;
+    font-family: 'Inconsolata';
+    font-size: 1.1rem;  
+    padding-bottom: 40px;
 }
 
-.resources {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+nav li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    color: #E082FF;
 }
 
-/* styles a white div box with red solid border. look into styling for mobile/tablet & add media query if required */ 
-.box-rw-c {
-  font-size: 1.2em;
-  border: 3px solid red;
-  border-radius: 20px;
-  background: white;
-  margin: 20px auto 20px auto;
-  width: 60%;
-  padding: 20px auto 20px auto;
-  line-height: 1.75em;
+a { 
+    text-decoration: none;
+    font-weight: 200;
+    color: #485DE6;
 }
 
-.box-content {
-  
-}
-
-.link-list {
-  list-style-type: none;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-
-/* this styles a large ascii header */
-.ascii-red {
-  font-family: "monospace";
-  white-space: pre;
-  text-align: center;
-  color: red;
-}
-
-/* this styles a standard link */
-a {
-  color: #0f47d4;
-  text-decoration: none;
-}
-
-/* this styles a link on mouseover - this may slow code down, look into it! */
 a:hover {
-  color: red;
+    color: #485DE6;
+    background-color: #7BF378;
 }
 
-footer {
-  font-style: italic;
-  width: 80%;
-  margin: 40px auto 20px auto;
-  text-align: center;
+.tbc {
+    font-weight: 200;
+    color: #485DE6;
+    opacity: 50%;
+}
+
+/*
+ul {
+    list-style: none;
+}
+
+li {
+    list-style-type: '✿';
+    color: #E082FF;
+}
+*/
+
+#notice {
+    width: 60%;
+    color: #000000;
+    display: flex;
+    justify-self: center;
+    border: 1px dashed black;
+    border-right: 1px dashed black;
+    border-top: 1px dashed black;
+    margin-bottom: 0px;
+    padding: 50px 40px 50px 40px;
+}
+
+
+/* TO BE REINSTATED 
+#billboard {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-top: -10px;
+    margin-left: 10px;
+    padding-left: 0px;
+}
+
+*/
+
+
+/* TO BE REINSTATED
+ .postit {
+    align-items: center;
+    width: 10%;
+    padding-top: 10%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-family: 'Inconsolata';
+    font-size: 1.4em;
+    font-weight: 300;
+    padding-left: 6%;
+    padding-bottom: 10%; 
+ } */
+     /* POSSIBLY NOT THIS LINE THO border-top: 1px dashed black;*/
+
+
+/* TO BE REINSTATED
+.postit:hover {
+    filter: brightness(120%);
+    border-top: 1px dotted black;
+    outline: 2px solid white;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    cursor: url(pinch.png), pointer;
+}
+    /* filter: drop-shadow(-1px 1px black); */
+
+    /*
+.postit:active {
+    background-color: #FFFFFF;
+}
+*/
+
+
+
+.yellow {
+    background-color: #f4ff75;
+ /*   padding-top: 40%; */
+    border-bottom: 30px solid #F4F755;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+ .yellow:hover {
+ 
+} 
+
+/*
+.yellow:hover {
+    background-color: lemonchiffon;
+}
+*/
+
+.green {
+    background-color: #9bfa98;
+    border-bottom: 30px solid #7BF378;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*
+.green:hover {
+    background-color: rgb(181, 255, 181);
+*/
+
+.blue {
+    background-color: #7686f5;
+    border-bottom: 30px solid #485DE6;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*
+.blue:hover {
+    background-color: #9ba7f4;
+}
+*/
+
+.purple {
+    background-color: #E082FF;
+    border-bottom: 30px solid #D969ff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*
+.purple:hover {
+    background-color: plum;
+}
+*/
+
+.pink {
+    background-color: #fa86cd; 
+    border-bottom: 30px solid #f15bb5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/*
+.pink:hover {
+    background-color: rgba(255, 181, 209, 0.995);
+}
+*/
+
+
+
+.btmborder {
+    border-top: 1px dashed;
 }
