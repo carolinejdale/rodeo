@@ -7,5 +7,6 @@ _drafts
 # ignore automatically generated .DS_Store files - these may contain sensitive information
 .DS_Store
 
-# ignore .vscode/ directory
-.vscode/
+# ignore .vscode/ with exception of launch.json
+.vscode/*
+!.vscode/launch.json
