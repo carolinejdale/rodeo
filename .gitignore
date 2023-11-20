@@ -1,5 +1,8 @@
 # ignore contents of sandbox directory
 _sandbox/
 
+# ignore contents of drafts directory
+_drafts
+
 # ignore automatically generated .DS_Store files - these may contain sensitive information
 .DS_Store
