@@ -6,3 +6,6 @@ _drafts
 
 # ignore automatically generated .DS_Store files - these may contain sensitive information
 .DS_Store
+
+# ignore .vscode/ directory
+.vscode/
