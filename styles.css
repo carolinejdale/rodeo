@@ -121,7 +121,6 @@ li {
 */
 
 
-
 .yellow {
     background-color: #f4ff75;
  /*   padding-top: 40%; */
@@ -129,11 +128,6 @@ li {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-
-
- .yellow:hover {
- 
-} 
 
 /*
 .yellow:hover {
@@ -191,8 +185,6 @@ li {
     background-color: rgba(255, 181, 209, 0.995);
 }
 */
-
-
 
 .btmborder {
     border-top: 1px dashed;
