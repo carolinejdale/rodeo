@@ -5,45 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A simple JavaScript to-do list">
     <link type="text/css" rel="stylesheet" href="projects.css" />
-<nav>
-  <title>projects</title>
-<ul>
-  <li>✿ <a href="../index.html">home</a></li>
-  <li>✿ <a href="github.com/carolinejdale">github</a>
-  <li>✿ <a href="linkedin.com/carolinejdale">linkedin</a></li>
-  <li>✿ <a href="mailto:carolinejdale@gmail.com">email</a></li>
-</ul>
-</nav>
+    <script type="text/javascript" src="burger.js"></script>
+    <title>projects</title>
   </head>
+  <header class="header">
+    <nav class="nav-bar">
+      <a href="#" class="nav-logo"> caro.rodeo </a>
+      <ul class="nav-menu">
+        <!-- <li class="nav-item">✿ <a href="../index.html" class="nav-link">home</a></li> -->
+        <li class="nav-item">✿ <a href="github.com/carolinejdale" class="nav-link">github</a>
+        <li class="nav-item">✿ <a href="linkedin.com/carolinejdale" class="nav-link">linkedin</a></li>
+        <li class="nav-item">✿ <a href="mailto:carolinejdale@gmail.com" class="nav-link">email</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
   <body>
     <hr>
     <h1>project: todo today</h1>
     <h2>a simple jS todo list</h2>
-    <div><ul class="skills">
-    <li>+ event listeners</li>
-    <li>+ nested functions</li> 
-    <li>+ arrays</li> 
-    <li>+ local storage API</li>
-    <li>+ document object model (DOM)</li>
-    <li>+ CSS</li>
-    <li>+ .ico files</ul> </div>
-  
-      <div><p>I'm a stationery and productivity app freak, but I'm cursed to never to find anything cute enough for my liking. This project was one of my first attempts to familiarise myself with JavaScript and DOM manipulation by modifying <a href="https://codepen.io/JohnPaulFich/pen/MXmzzM">this CodePen</a> by John Fichera (<a href="https://codepen.io/JohnPaulFich">@JohnPaulFich</a>) to make a clean, vaguely camp to-do list app to run in my browser at work.
 
-    <p>Naturally, I also implemented a custom icon to match the updated CSS featuring my favourite symbol (Black Florette, duh! &#x273F;)</div>
+      <div>
+        <ul class="skills">
+          <li>+ event listeners</li>
+          <li>+ nested functions</li> 
+          <li>+ arrays</li> 
+          <li>+ local storage API</li>
+          <li>+ document object model (DOM)</li>
+          <li>+ CSS</li>
+          <li>+ .ico files</ul> 
+      </div>
+
+      <div>
+        <p>I'm a stationery and productivity app freak, but I'm cursed to never to find anything cute enough for my liking. This project was one of my first attempts to familiarise myself with JavaScript and DOM manipulation by modifying <a href="https://codepen.io/JohnPaulFich/pen/MXmzzM">this CodePen</a> by John Fichera (<a href="https://codepen.io/JohnPaulFich">@JohnPaulFich</a>) to make a clean, vaguely camp to-do list app to run in my browser at work.
+
+        <p>Naturally, I also implemented a custom icon to match the updated CSS featuring my favourite symbol (Black Florette, duh! &#x273F;)
+      </div>
 
       <div class="preview">
-          <a href="/projects/tt/todo_today.html" target="_blank" class="ss-img">
+        <a href="/projects/tt/todo_today.html" target="_blank" class="ss-img">
           <img src='tt-ss01.png' 
             onmouseover="this.src='tt-ss02.png';"
             onmouseout="this.src='tt-ss01.png';" 
             alt="screenshots of 'todo today' web app">
-          </a>
-          <div class="ss-caplink"><a href="/tt/todo_today.html">take a look</a></div>
+        </a>
+        <div class="ss-caplink">
+          <a href="/tt/todo_today.html">take a look</a>
+        </div>
       </div>
       <hr>
-</body>
+    </body>
 <footer>
-  <div class="coming">updated 20231129 | more projects coming soon</div>
-  <div><a href="/index.html"><<< way back home</a></div></footer>
+  <div class="coming">last updated 20231129 <span class="flor-larger">&#x273F;</span> more projects coming soon</div>
+  <div><a href="/index.html"><<< back to the ranch</a></div></footer>
 </html>
