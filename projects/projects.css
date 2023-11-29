@@ -1,0 +1,168 @@
+/* ----- PAGE -----*/
+ body {
+    background-color: #2171e5;
+    font-family: 'Roboto Mono', 'Victor Mono', 'Inconsolata', monospace;
+    color: #fadbdb;
+    width: 80%;
+}
+
+/* ----- TEXT ----- */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* ----- NAV [no navbar at present] ----- */
+/* 
+nav {
+    width: 100%;
+    font-size: 1.1rem;  
+    padding-bottom: 40px;
+}
+
+nav li {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    color: #7BF378;
+}
+*/
+
+/* ----- LINKS ----- */
+a { 
+    text-decoration: none;
+    font-weight: 400;
+    color: #E082FF;
+}
+
+a:hover {
+    color: #2171e5;
+ /*   background-color: #E082FF; */
+}
+
+/* ----- LISTS ----- */
+
+ul > li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+li {
+list-style-type: '✿ ';
+}
+
+
+/* ----- PROJECT PREVIEW ----- */
+.tt-prev {
+    margin: 10px 15% 10px 15%;
+    position: relative;
+}
+
+.tt-prev:hover > #prev-txt {
+    display: none;
+}
+
+.tt-prev > #tt-img {
+    opacity: 50%;
+    background-color: none;
+}
+#tt-img:hover {
+    opacity: 100%;
+}
+
+
+#prev-txt {
+    display: inline-block;
+    opacity: 100%;
+    top: 60%;
+    width: 100%;
+    position: absolute;
+    background-color: #FFFFFF;
+    color: #34dd7a;
+    opacity: 100%;
+    z-index: 1;
+}
+
+/* ----- "TAKE A LOOK" txt ----- */
+#tt-txt {
+    font-size: 3.5rem;
+}
+
+/* ----- CARET -----*/
+.caret {
+    position: absolute;
+    margin-left: 10px;
+    width: 20px;
+    height: 100%;
+    background-color: #34dd7a;
+    animation: blink 1s linear infinite;
+    -webkit-animation: blink 1s linear infinite;
+    
+    @keyframes blink {
+        0% {
+          opacity: 0;
+        }
+      
+      
+      50% {
+        opacity: .5;
+      }
+
+      100% {
+        opacity: 1;
+      }
+      }
+
+      @-webkit-keyframes blink {
+        to {
+          visibility: hidden;
+        }
+        }
+}
+/* ----- IMGS ----- */
+
+#tt-img > img {
+    width: 100%;
+    border: 3px solid #34dd7a;
+    border-radius: 20px;
+    }
+
+
+
+
+/*
+#ttss {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 300px;
+    background-image: url('tt-ss01a.png');
+    background-size: 100%;
+    opacity: 50%;
+    background-color: #FFFFFF;
+    border: 5px solid #34DD7A;
+    border-radius: 20px;
+}
+
+#ttss:hover {
+    opacity: 100%;
+    background-image: url('tt-ss02a.png');
+    border: 5px solid pink;
+    border-radius: 20px;
+    }
+/*
+
+/*
+#ttss > img {
+    border: 3px #2171e5 solid;
+    border-radius: 10px;
+    margin: 2px;
+}
+*/
