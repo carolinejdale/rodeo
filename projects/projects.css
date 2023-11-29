@@ -90,79 +90,10 @@ list-style-type: '✿ ';
     z-index: 1;
 }
 
-/* ----- "TAKE A LOOK" txt ----- */
-#tt-txt {
-    font-size: 3.5rem;
-}
 
-/* ----- CARET -----*/
-.caret {
-    position: absolute;
-    margin-left: 10px;
-    width: 20px;
-    height: 100%;
-    background-color: #34dd7a;
-    animation: blink 1s linear infinite;
-    -webkit-animation: blink 1s linear infinite;
-    
-    @keyframes blink {
-        0% {
-          opacity: 0;
-        }
-      
-      
-      50% {
-        opacity: .5;
-      }
-
-      100% {
-        opacity: 1;
-      }
-      }
-
-      @-webkit-keyframes blink {
-        to {
-          visibility: hidden;
-        }
-        }
-}
 /* ----- IMGS ----- */
-
 #tt-img > img {
     width: 100%;
     border: 3px solid #34dd7a;
     border-radius: 20px;
     }
-
-
-
-
-/*
-#ttss {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: 300px;
-    background-image: url('tt-ss01a.png');
-    background-size: 100%;
-    opacity: 50%;
-    background-color: #FFFFFF;
-    border: 5px solid #34DD7A;
-    border-radius: 20px;
-}
-
-#ttss:hover {
-    opacity: 100%;
-    background-image: url('tt-ss02a.png');
-    border: 5px solid pink;
-    border-radius: 20px;
-    }
-/*
-
-/*
-#ttss > img {
-    border: 3px #2171e5 solid;
-    border-radius: 10px;
-    margin: 2px;
-}
-*/
