@@ -1,99 +1,110 @@
-/* ----- PAGE -----*/
- body {
-    background-color: #2171e5;
-    font-family: 'Roboto Mono', 'Victor Mono', 'Inconsolata', monospace;
-    color: #fadbdb;
-    width: 80%;
+html {
+    font-size: 1rem;
 }
 
-/* ----- TEXT ----- */
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
-    font-weight: 300;
-}
-
-p {
-    margin-top: 10px;
-    font-weight: 300;
-}
-
-/* ----- NAV [no navbar at present] ----- */
-/* 
+/* ----- NAV ----- */
 nav {
-    width: 100%;
     font-size: 1.1rem;  
-    padding-bottom: 40px;
+    padding: calc(8px + 1.5625vw);
+
 }
 
 nav li {
     display: block;
     float: left;
-    margin-left: 10px;
-    color: #7BF378;
+    color: #e8a5ff;
 }
-*/
+
+/* ----- BODY -----*/
+ body {
+    background-color: #2171e5;
+    font-family: 'Roboto Mono', 'Victor Mono', 'Inconsolata', monospace;
+    color: #fadbdb;
+    width: 70%;
+}
+
+/* ----- HORIZONTAL RULE ----*/
+hr {
+    margin: calc(8px + 1.5625vw);
+    border: none;
+    border-top: 2px solid #e8a5ff;
+}
+
+/* ----- TEXT ----- */
+h1 {
+    font-size: 2.0rem;
+    font-weight: 400;
+    letter-spacing: 0.1ch;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
 
 /* ----- LINKS ----- */
 a { 
     text-decoration: none;
     font-weight: 400;
-    color: #E082FF;
+    color: #FCF755;
 }
 
 a:hover {
-    color: #2171e5;
- /*   background-color: #E082FF; */
+    color: #7BF378;
+    text-decoration: 1px underline;
 }
 
 /* ----- LISTS ----- */
-
 ul > li {
     display: inline-block;
     margin-right: 10px;
     margin-left: 10px;
 }
 
-li {
-list-style-type: '✿ ';
+li > .skills {
+    margin-right: 1rem;
+    
 }
-
 
 /* ----- PROJECT PREVIEW ----- */
-.tt-prev {
-    margin: 10px 15% 10px 15%;
+.preview {
+    max-width: 70%;
+    padding: calc(8px + 1.5625vw);
     position: relative;
+    display: grid;
+    place-items: center;
 }
 
-.tt-prev:hover > #prev-txt {
-    display: none;
-}
-
-.tt-prev > #tt-img {
-    opacity: 50%;
-    background-color: none;
-}
-#tt-img:hover {
-    opacity: 100%;
-}
-
-
-#prev-txt {
-    display: inline-block;
-    opacity: 100%;
-    top: 60%;
-    width: 100%;
-    position: absolute;
-    background-color: #FFFFFF;
-    color: #34dd7a;
-    opacity: 100%;
-    z-index: 1;
-}
-
-
-/* ----- IMGS ----- */
-#tt-img > img {
-    width: 100%;
+.ss-img > img {
     border: 3px solid #34dd7a;
     border-radius: 20px;
     }
+
+.ss-img {
+    opacity: 50%;
+}
+
+.ss-img:hover {
+    opacity: 100%;
+}
+
+.ss-caplink {
+    font-size: 0.9rem;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    padding: calc(8px + 1.5625vw);
+}
+
+.coming {
+    color: #e8a5ff;
+    font-weight: lighter;
+}
