@@ -8,6 +8,8 @@ Hello, this is the readme file for my personal website.
     + Web Application Server-Side Foundations coursework;
     + freeCodeCamp projects;
     + Todo Today
+        + Review semantic HTML
+        + Create media queries
 + Create a CV and/or bio page (web and PDF/print versions).
 + Add a links page.
 + Update index.html and styles.css with an improved layout once content is in place.
