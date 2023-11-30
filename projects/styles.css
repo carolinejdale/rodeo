@@ -1,4 +1,3 @@
-/* following code block has been imported to test...*/
 * {
     margin: 0;
     padding: 0;
@@ -6,19 +5,19 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 70%;
     font-family: 'Roboto', sans-serif;
+    padding: 1rem;
 }
 
-li {
-    list-style: none;
+body {
+    background-color: #2171e5;
+    font-family: 'Roboto Mono', 'Victor Mono', 'Inconsolata', monospace;
+    color: #fadbdb;
+    width: 70%;
 }
 
-a {
-    text-decoration: none;
-}
-
-/* ----- RESPONSIVE NAV ----- */
+/* ----- NAV ----- */
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -52,7 +51,6 @@ a {
     font-weight: 300;
     color: #e8a5ff;
     letter-spacing: 0.1ch;
-    /* padding: 1rem; */
 }
 
 .nav-logo:hover{
@@ -75,19 +73,11 @@ a {
     background-color: #FCF755;
 }
 
-/* ----- BODY -----*/
- body {
-    background-color: #2171e5;
-    font-family: 'Roboto Mono', 'Victor Mono', 'Inconsolata', monospace;
-    color: #fadbdb;
-    width: 70%;
-}
-
 /* ----- HORIZONTAL RULE ----*/
 hr {
-/*   margin: calc(8px + 1.5625vw); */
+    margin-bottom: calc(8px + 1.5625vw); 
     border: none;
-    border-top: 2px solid #e8a5ff;
+    border-top: 2px dashed #e8a5ff;
 }
 
 /* ----- TEXT ----- */
@@ -102,7 +92,7 @@ h2 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 10px;
     font-weight: 300;
 }
@@ -116,7 +106,6 @@ a {
 
 a:hover {
     color: #7BF378;
-/* TEST - to be added back   text-decoration: 1px underline; */
 }
 
 /* ----- LISTS ----- */
@@ -125,6 +114,8 @@ ul > li {
 }
 
 .skills {
+    padding-top: 1em;
+    padding-bottom: 1em;
     margin-left: 2rem;
 }
 
@@ -134,16 +125,19 @@ ul > li {
 
 /* ----- PROJECT PREVIEW ----- */
 .preview {
-    max-width: 70%;
     padding: calc(8px + 1.5625vw);
     position: relative;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .ss-img > img {
     border: 3px solid #34dd7a;
     border-radius: 20px;
+    max-width: 90%;
+    height: auto;
     }
 
 .ss-img {
@@ -178,10 +172,6 @@ footer {
 
 /* ----- MEDIA QUERIES ----- */
 @media only screen and (max-width: 800px) {
-
-    .preview {
-        max-width: 70%;
-    }
 
     .nav-menu {
         position: fixed;
