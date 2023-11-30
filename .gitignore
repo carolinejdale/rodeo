@@ -9,3 +9,6 @@ _drafts
 
 # ignore .vscode directory
 .vscode/*
+
+# ignore tt/about.html until required
+/tt/about.html
