@@ -1,8 +1,30 @@
+/* following code block has been imported to test...*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
 html {
     font-size: 1rem;
 }
+*/
 
-/* ----- NAV ----- */
+/* ----- OLD NAV ----- */
 /* .header {
     border-bottom: 1px solid #E2E8F0;
 } */
@@ -19,23 +41,26 @@ html {
     color: #e8a5ff;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+/* ----- RESPONSIVE NAV ----- */
 .nav-bar {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 0.5rem 1.5rem;
+    align-items: center;
+    padding: 1rem 1.5rem;
     color: #e8a5ff;
 }
 
 .nav-list {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
     align-items: flex-end;
 }
 
 .nav-item {
     margin-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
@@ -49,7 +74,7 @@ html {
 
 .nav-logo {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: 300;
     color: #e8a5ff;
     letter-spacing: 0.1ch;
     /* padding: 1rem; */
@@ -60,17 +85,19 @@ html {
 }
 
 .hamburger {
-        display: none;
+    display: none;
 }
 
 .bar {
+    color: #2171e5;
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
+    border-radius: 15px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: #FCF755;
 }
 
 /* ----- BODY -----*/
@@ -92,7 +119,6 @@ hr {
 h1 {
     font-size: 2.0rem;
     font-weight: 400;
-    letter-spacing: 0.1ch;
 }
 
 h2 {
@@ -106,7 +132,6 @@ p {
     font-weight: 300;
 }
 
-
 /* ----- LINKS ----- */
 a { 
     color: #FCF755;
@@ -116,21 +141,21 @@ a {
 
 a:hover {
     color: #7BF378;
-    text-decoration: 1px underline;
+/* TEST - to be added back   text-decoration: 1px underline; */
 }
 
 /* ----- LISTS ----- */
 ul > li {
     display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
-/*
-li > .skills {
-   margin-right: 1rem; 
+.skills {
+    margin-left: 2rem;
 }
-*/
+
+.skills > li {
+    margin-right: 1rem;
+}
 
 /* ----- PROJECT PREVIEW ----- */
 .preview {
@@ -171,43 +196,54 @@ footer {
     margin-bottom: 0.3rem;
 }
 
+/* ----- SYMBOLS -----*/
 .flor-larger {
     font-size: larger;
 }
 
 /* ----- MEDIA QUERIES ----- */
-/* @media screen and (max-width: 600px) {
-    .topnav {
-
-    }
-} */
-
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
-        left: -100%;
-        top: 5rem;
+        top: -100%;
+        left: 0;
+        display: flex;
         flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
+        justify-content:center;
+        background-color: #f2edd1;
+        width: 70%;
+        text-align: left;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        border-radius: 0 0 15px 15px;
+        z-index: 1;
+/*       box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05); */
     }
 
     .nav-menu.active {
-        left: 0;
+        top: 0;
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 0rem;
+        padding: 1rem;
     }
+
+    .nav-link {
+        color: #2171e5;
+        font-size: 2rem;
+        letter-spacing: 0.2ch;
+    }
+
+    .nav-link:hover {
+        color: #184fa2;
+    }
+    
 
     .hamburger {
         display: block;
         cursor: pointer;
+        z-index: 2;
     }
 
     .hamburger.active .bar:nth-child(2) {
@@ -216,9 +252,24 @@ footer {
 
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
+        color:#FCF755;
+        background-color: #2171e5;
     }
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+        color:#FCF755;
+        background-color: #2171e5;
     }
+
+    .nav-item:nth-child(odd) {
+        background-color: #ffee90;
+    }
+
+
+    .nav-link > .flor-larger {
+        margin-left: 1rem;
+        color: #e8a5ff;
+    }
+
 }
