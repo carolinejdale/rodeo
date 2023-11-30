@@ -203,6 +203,11 @@ footer {
 
 /* ----- MEDIA QUERIES ----- */
 @media only screen and (max-width: 768px) {
+
+    .preview {
+        max-width: 70%;
+    }
+
     .nav-menu {
         position: fixed;
         top: -100%;
@@ -216,8 +221,6 @@ footer {
         transition: 0.3s;
         border-radius: 0 0 15px 15px;
         z-index: 1;
-/*       box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05); */
     }
 
     .nav-menu.active {
@@ -239,7 +242,6 @@ footer {
         color: #184fa2;
     }
     
-
     .hamburger {
         display: block;
         cursor: pointer;
@@ -266,10 +268,8 @@ footer {
         background-color: #ffee90;
     }
 
-
     .nav-link > .flor-larger {
         margin-left: 1rem;
         color: #e8a5ff;
     }
-
 }
