@@ -18,31 +18,6 @@ a {
     text-decoration: none;
 }
 
-/*
-html {
-    font-size: 1rem;
-}
-*/
-
-/* ----- OLD NAV ----- */
-/* .header {
-    border-bottom: 1px solid #E2E8F0;
-} */
-
-/* nav {
-    font-size: 1.1rem;  
-    padding: calc(8px + 1.5625vw); 
-} 
-*/
-
-/* nav li {
-    display: block;
-    float: right;
-    color: #e8a5ff;
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
-
 /* ----- RESPONSIVE NAV ----- */
 .nav-bar {
     display: flex;
@@ -202,7 +177,7 @@ footer {
 }
 
 /* ----- MEDIA QUERIES ----- */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
 
     .preview {
         max-width: 70%;
