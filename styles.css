@@ -42,12 +42,12 @@ a:hover {
 }
 
 main {
-    width: 60%;
     margin-top: 5%;
 }
 
 .nav-bar {
-    padding: 0;
+    padding: 0px;
+    margin: 0;
 }
 
 .box001 {
@@ -55,16 +55,21 @@ main {
 }
 
 #notice {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #FFFFFF;
     border: 1px dashed black;
     padding-left: calc(15px + 1.5625vw);
     padding-right: calc(15px + 1.5625vw);
+    margin-left: calc(15px + 1.5625vw);
+    margin-right: calc(15px + 1.5625vw);
 }
 
 #billboard {
     display: flex;
     flex-direction: row;
-    max-width: 65%;
+    max-width: 70%;
+    margin-left: calc(15px + 1.5625vw);
  /*   margin-left: 0px;
     padding-left: 0px; */
 }
@@ -72,7 +77,7 @@ main {
 .postit {
     display: flex;
     align-items: center;
-    flex-grow: 0.5;
+    flex-grow: 0.1;
     padding-top: 5vh;
     padding-bottom: 2vh;
     border-bottom-left-radius: 20px;
@@ -121,9 +126,20 @@ main {
 
 
 /*---------------------MEDIA QUERIES-------------------*/
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 480px) {
+
     html {
-      font-size: 1.0em;
+        font-size: 5vw;
+    }
+
+    a {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+      font-size: 4vw;
     }
   }
 
@@ -140,22 +156,18 @@ main {
         margin: 0px;
     }
 
-    main {
-        width: 100%;
-    }
-
     html {
-        font-size: 2vw;
+        font-size: 4vw;
     }
-
 
     .box001 {
         align-items: center;
     }
 
     #notice {
-        margin-left: calc(1px + 1.5625vw);
+        padding: calc(20px + 1.5625vw);
         margin-right: calc(1px + 1.5625vw);
+        margin-left: calc(1px + 1.5625vw);
 }
 
     #billboard {
@@ -163,6 +175,7 @@ main {
         display: flex;
         flex-direction: column;
         padding-top: 1rem;
+        margin-left: 0px;
     }
 
     .postit {
@@ -176,7 +189,7 @@ main {
         border-right: 30px solid;
         border-bottom: none;
         min-width: fit-content;
-        max-width: 20%;
+        max-width: 100%;
     }
 
     .green {
