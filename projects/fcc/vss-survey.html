@@ -21,11 +21,11 @@
         <fieldset id="personal">
           <legend>PERSONAL DETAILS</legend>
           <!-- QUESTION 1 [TEXT] -->
-          <label id="name-label">Name: <input id="name" type="text" placeholder="e.g. Topher Snagstone" required/></label>
+          <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="e.g. Topher Snagstone" required/></label>
           <!-- QUESTION 2 [EMAIL]-->
-          <label id="email-label">Email: <input id="email" type="email" placeholder="e.g. toph@snags.io" required/></label>
+          <label for="email" id="email-label">Email: <input id="email" type="email" placeholder="e.g. toph@snags.io" required/></label>
           <!-- QUESTION 3 [NUMBER] -->
-          <label id="number-label">Age: <input id="number" type="number" min="18" max="150" placeholder=""/></label>
+          <label for="age" id="age-label">Age: <input id="age" type="number" min="18" max="150" placeholder=""/></label>
        </fieldset>
 
         <fieldset>
@@ -37,23 +37,23 @@
         <fieldset>
           <legend>THYME OF THE SEASON</legend>
             <!-- QUESTION 5 [RADIO]-->
-            Select your favourite seasoning:<label><input type="radio" name="seasoning" value="rosemary"/> Rosemary</label>
-            <label><input type="radio" name="seasoning" value="smoked-paprika"/> Smoked paprika</label>
-            <label><input type="radio" name="seasoning" value="citrus-zest"/> Citrus zest</label>
-            <label><input type="radio" name="seasoning" value="thyme"/> Thyme</label>
-            <label><input type="radio" name="seasoning" value="scarborough"/> The full Scarborough Fair</label>
+            Select your favourite seasoning:<label for="rosemary"><input type="radio" name="seasoning" id="rosemary" value="rosemary"/> Rosemary</label>
+            <label for="paprika"><input type="radio" name="seasoning" id="paprika" value="smoked-paprika"/> Smoked paprika</label>
+            <label for="zest"><input type="radio" name="seasoning" id="zest" value="citrus-zest"/> Citrus zest</label>
+            <label for="thyme"><input type="radio" name="seasoning" id="thyme" value="thyme"/> Thyme</label>
+            <label for="scarborough"><input type="radio" name="seasoning" id="scarborough" value="scarborough"/> The full Scarborough Fair</label>
         </fieldset>
 
         <fieldset>
          <legend>EXPERIENCE</legend>
             <!-- QUESTION 6 [CHECKBOX] -->
             Which of the following dishes do you have experience preparing?
-            <label><input type="checkbox" name="prep" value="parsnip"/> Parsnip pâté</label>
-            <label><input type="checkbox" name="prep" value="fennel"/> Fennel fingers</label>
-            <label><input type="checkbox" name="prep" value="gluten"/> Gluten gyros</label>
-            <label><input type="checkbox" name="prep" value="seitan"> Seitan sirloin</label>
-            <label><input type="checkbox" name="prep" value="horseradish"/> Horseradish haggis</label> 
-            <label><input type="checkbox" name="prep" value="tofu"/> Tofu-in-the-hole</label>
+            <label for="parsnip"><input type="checkbox" name="prep" id="parsnip" value="parsnip"/> Parsnip pâté</label>
+            <label for="fennel"><input type="checkbox" name="prep" id="fennel" value="fennel"/> Fennel fingers</label>
+            <label for="gluten"><input type="checkbox" name="prep" id="gluten" value="gluten"/> Gluten gyros</label>
+            <label for="seitan"><input type="checkbox" name="prep" id="seitan" value="seitan"> Seitan sirloin</label>
+            <label for="horseradish"><input type="checkbox" name="prep" id="horseradish" value="horseradish"/> Horseradish haggis</label> 
+            <label for="tofu"><input type="checkbox" name="prep" id="todu" value="tofu"/> Tofu-in-the-hole</label>
         </fieldset>     
 
         <fieldset>
