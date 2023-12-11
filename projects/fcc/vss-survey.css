@@ -1,0 +1,144 @@
+
+/* BODY */
+body {
+    background-image: radial-gradient(
+  #FFACA8 0%,
+  #FFEDDA 50%,
+  #FFACA8 100%);
+  font-size: 5vw;
+}
+
+/* TEXT */
+h1 {
+    font-family: 'Silkscreen';
+    color: #FFA8AF;
+    font-size: 2.5rem;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', 'Inconsolata', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-size: 2rem;
+  }
+
+p {
+    font-family: 'Roboto', 'Inconsolata';
+    font-size: 1.5rem;
+}
+
+/* CONTAINER */
+#dashbox {
+  background: #1842bd;
+  border: 4px solid #ffedda;
+  border-radius: 15px;
+  margin: 2rem 2rem; 
+  color: #ffedda;
+}
+
+/* BANNER */
+#banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+#left-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+
+#vss-round-icon {
+  width: 100%;
+}
+
+
+
+/* FORM */
+fieldset {
+  margin: 1em 2em;
+  border: solid 1px pink;
+  font-family: 'Roboto', 'Inconsolata';
+  font-size: 1.3rem;
+}
+
+fieldset > label {
+  display: block;
+}
+
+#personal > label {
+  display: inline-block;
+}
+
+button {
+  display: block;  
+  margin: 2em auto 2em auto;
+  font-family: 'Silkscreen';
+  background-color: #FFA8AF;
+  color: #FF0000;
+  font-size: 1.5rem;
+  border: solid 3px #FFFFFF;
+}
+
+textarea {
+    margin-top: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+
+label {
+    position: left;
+    font-size: 1.3rem;
+  }
+
+legend {
+  color: #FFA8AF;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+
+/*
+input {
+    position: right;
+}
+*/
+
+input .name .email .age {
+  left: 5rem;
+}
+
+  input:focus {
+    background-color: pink;
+    outline: solid 1px white;
+  }
+
+  /* ----- MEDIA QUERIES ----- */
+@media only screen and (max-width: 800px) {
+  body {
+  font-size: 16px ;
+  }
+
+  #dashbox {
+    margin: 0rem;
+  }
+
+  #banner {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  #left-banner {
+    display: block;
+    width: 100%;
+  }
+
+  fieldset {
+    margin: 0em;
+  }
+}
