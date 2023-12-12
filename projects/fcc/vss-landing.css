@@ -6,8 +6,8 @@ body {
 }
 
 #nav-block {
-background-color: #AFBEFF;
-color: #FF0000;
+background-color: #0F47D4;
+color: #F7CBE3;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 2rem;
 font-weight: 500;
@@ -16,27 +16,27 @@ font-weight: 500;
 #nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 1rem auto 1rem auto;
-    margin-bottom: 2rem;
-    height: 3rem;
+    padding: 1rem;
+    text-transform: uppercase;
 }
 
 #nav-bar > a {
-    color: #9B0224;
+    color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 200;
     letter-spacing: 0.2ch;
-    text-decoration: none;
+    text-decoration: underline;
     padding: 1rem;
 }
 
-#header-img {
+#banner-img {
     display: block;
-    margin: 1px auto;
-    padding: 1rem;
+    justify-content: flex-start;
+    margin: 0px auto;
+    max-width: 80%;
 }
 
 main {
@@ -46,11 +46,10 @@ main {
 
 #welcome {
     display: block;
-    padding-top: 3rem;
     padding-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 100%;
 }
 
 #tagline {
@@ -63,6 +62,7 @@ main {
     justify-content: space-between;
     align-items: center;
     margin: 1rem;
+    max-width: 90%;
 }
 
 .item {
@@ -79,4 +79,10 @@ main {
 
 .item > img {
     margin: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    #products {
+        flex-direction: column;
+    }
 }
