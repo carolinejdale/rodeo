@@ -1,0 +1,82 @@
+body {
+    background: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Roboto', 'Inconsolata', sans-serif;
+    margin: 0%;
+}
+
+#nav-block {
+background-color: #AFBEFF;
+color: #FF0000;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 2rem;
+font-weight: 500;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto 1rem auto;
+    margin-bottom: 2rem;
+    height: 3rem;
+}
+
+#nav-bar > a {
+    color: #9B0224;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.2ch;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+#header-img {
+    display: block;
+    margin: 1px auto;
+    padding: 1rem;
+}
+
+main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#welcome {
+    display: block;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#tagline {
+    font-style: italic;
+}
+
+#products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #0000FF;
+    font-size: 1.8rem;
+    font-style: italic;
+    border: 1px solid #f00;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.item > img {
+    margin: 1rem;
+}
