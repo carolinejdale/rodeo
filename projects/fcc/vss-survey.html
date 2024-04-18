@@ -3,6 +3,13 @@
  <head>
     <link rel="stylesheet" type="text/css" href="vss-survey.css">
     <title>Vegetarian Sausage Chef Application Form</title>
+    <script>
+        function setAction(form) {
+          form.action = "vssform.html";
+          alert(form.action);
+        return false;        
+      }
+      </script>
   </head>
   <body>
     <div id="dashbox">
@@ -17,7 +24,9 @@
           </div>
         </div>
 
-      <form id="survey-form" action="/vss-survey.php" method="get">
+     <!-- <form id="survey-form" action="/vss-survey.php" method="get"> -->
+      <form onsubmit="return setAction(this)">
+  
         <fieldset id="personal">
           <legend>PERSONAL DETAILS</legend>
           <!-- QUESTION 1 [TEXT] -->
