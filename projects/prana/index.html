@@ -1,0 +1,79 @@
+<!-- TO DO -->
+<!-- + Add hotkey functionality -->
+<!-- + Add text instructions -->
+  <!-- + Fix inhale/exhale timing bug -->
+<!-- x Add media queries for breakpoints -->
+<!-- x Design menu for mobile, tablet -->
+<!-- x Add button for about the author and/or home -->
+<!-- x Add breath counts and/or timer -->
+<!-- x Add animations for other types of breathing -->
+  <!-- x 4:6 breath -->
+  <!-- x 5:6 breath -->
+  <!-- x box breath -->
+  <!-- x ladder breath -->
+<!-- x Add jS toggle for dark mode -->
+<!-- x Add CSS for dark mode -->
+<!-- x Add animation to breath div -->
+<!-- x Center animation text -->
+<!-- x Fix animation text changes -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>breathe in</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+    <body>
+       <header>
+         <div id="navbar">
+          <ul>
+            <li><button id="switch" onclick="toggleDark()"><span id="night">night mode</span><!--<span id="day"> day mode</span>--></button></li>    
+           <!-- <li><a href="/ladderbreath.html">ladder breath</a></li>
+            <li><a href="/boxbreath.html">box breath</a></li>
+            <li><a href="/fourtosix.html">4:6 breath</a></li>   
+            <li><a href="/fourtosix.html">5:6 breath</a></li> -->
+          </ul>
+          </div>
+          <div id="dropdown">
+            <ul>
+              <li><button id="switch" onclick="toggleDark()"><span id="night">night mode</span><!--<span id="day"> day mode</span>--></button></li>    
+              <li><a href="/ladderbreath.html">ladder breathing</a></li>
+              <li><a href="/boxbreath.html">box breath</a></li>
+              <li><a href="/fourtosix.html">4:6 breath</a></li>   
+              <li><a href="/fourtosix.html">5:6 breath</a></li>
+            </ul>
+          </div>
+         </nav>	
+       </header>
+       <main class>
+        <div id="breathbox">
+         <div id="breath"></div>
+         <div id="inhale-exhale"></div>
+        </div>
+        <!-- TO DO: look into how to add custom hotkey-->
+       </main>
+       <footer>
+       
+        <div id="foot-txt">click <button id="option-btn" onclick="toggleDark()">here</button> or [ALT + M / CMD + M] to toggle menu </div><div id="foot-empty"><div id="foot-x">[x]</div></footer>
+    <script src="index.js"></script>
+    </body>
+</html>
+
+
+<!-- OPTIONAL -->
+<!--
+FAVICON
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+GOOGLE FONTS
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="#" rel="stylesheet">
+
+FONTAWESOME
+    <script src="https://kit.fontawesome.com/c25bdad5d2.js" crossorigin="anonymous"></script>
+-->
