@@ -6,7 +6,9 @@
 <!-- x Design menu for mobile, tablet -->
 <!-- x Add button for about the author and/or home -->
 <!-- x Add functionality to [x] in footer -->
+<!-- x Add favicon -->
 <!-- x Add breath counts and/or timer -->
+<!-- x Add onclick functionality for different breath types -->
 <!-- x Add animations for other types of breathing -->
   <!-- x 4:6 breath -->
   <!-- x 5:6 breath -->
@@ -27,54 +29,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>breathe in</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   </head>
     <body>
        <header>
-         <div id="navbar">
+        <!-- navbar currently not required -->
+        <!-- <nav> <div id="navbar" class="options">
           <ul>
-            <li><button id="switch" onclick="toggleDark()"><span id="night">night mode</span><!--<span id="day"> day mode</span>--></button></li>    
-           <!-- <li><a href="/ladderbreath.html">ladder breath</a></li>
+            <li><button id="switch" onclick="toggleDark()"><span id="night">night mode</span>
+           ></button></li>    
+             <li><a href="/ladderbreath.html">ladder breath</a></li>
             <li><a href="/boxbreath.html">box breath</a></li>
             <li><a href="/fourtosix.html">4:6 breath</a></li>   
-            <li><a href="/fourtosix.html">5:6 breath</a></li> -->
-          </ul>
-          </div>
-          <div id="dropdown">
-            <ul>
-              <li><button id="switch" onclick="toggleDark()"><span id="night">night mode</span><!--<span id="day"> day mode</span>--></button></li>    
-              <li><a href="/ladderbreath.html">ladder breathing</a></li>
-              <li><a href="/boxbreath.html">box breath</a></li>
-              <li><a href="/fourtosix.html">4:6 breath</a></li>   
-              <li><a href="/fourtosix.html">5:6 breath</a></li>
+            <li><a href="/fourtosix.html">5:6 breath</a></li>
             </ul>
           </div>
-         </nav>	
+         </nav>	-->
        </header>
        <main class>
         <div id="breathbox">
          <div id="breath"></div>
          <div id="inhale-exhale"></div>
         </div>
-        <!-- TO DO: look into how to add custom hotkey-->
        </main>
-       <footer>
+       <footer id="menu">
        
-        <div id="foot-txt">click <button id="option-btn" onclick="toggleDark()">here</button> or [ALT + M / CMD + M] to toggle menu </div><div id="foot-empty"><div id="foot-x">[x]</div></footer>
+        <div id="main-menu" class="options">keyboard shortcuts: 
+         <!-- <span class="shortcut"><button class="letter" onclick="pranaMenu()">m</button> <u>m</u>ore breath styles </span> -->
+          <span class="shortcut"><button class="letter" onclick="toggleDark()">n</button> toggle <u>n</u>ight mode </span> 
+          <span class="shortcut"><button class="letter" onclick="aboutPopup()">a</button> about
+          </span>
+          <span class="shortcut"><button class="letter" onclick="hideOptions()">o</button> hide/show <u>o</u>ptions </span> 
+        </div>
+        
+            <!-- onclick functions to be defined -->
+        <div id="breath-menu">
+          <span class="shortcut"><button class="letter" onclick="coherentBreath()">1</button> coherent breathing<span>
+            <span class="shortcut"><button class="letter" onclick="ladderBreath()">2</button> ladder breathing<span>
+          <span class="shortcut"><button class="letter" onclick="fourSixBreath()">4</button> 4:6 breathing<span>
+           <span class="shortcut"><button class="letter" onclick="fiveSixBreath()">6</button> 6:6 breathing<span>
+          <span class="shortcut"><button class="letter" onclick="showOptions()">m</button> return to <u>m</u>ain menu<span>
+          </div>
+        </footer>
     <script src="index.js"></script>
     </body>
 </html>
-
-
-<!-- OPTIONAL -->
-<!--
-FAVICON
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-
-GOOGLE FONTS
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="#" rel="stylesheet">
-
-FONTAWESOME
-    <script src="https://kit.fontawesome.com/c25bdad5d2.js" crossorigin="anonymous"></script>
--->

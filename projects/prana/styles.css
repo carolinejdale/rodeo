@@ -14,6 +14,7 @@ nav {
     margin: 1rem;
 }
 
+
 #dropdown {
     display: none;
 }
@@ -25,25 +26,30 @@ li {
 }
 
 li > a {
-/*    color: #FFF4d8; */
     color: #474948;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 400;
 }
 
+
 a {
     color: #38BB8F;
 }
 
+/*
 li > a:hover {
     text-decoration: dashed;
     color: #38BB8F;
-    content: "coming soon";
-}
+} */
 
 #switch {
     color: #FFF4D8;
+    background-color: #38BB8F;
+}
+
+
+#switch::after {
     background-color: #38BB8F;
 }
 
@@ -55,10 +61,6 @@ li > a:hover {
 }
 */
 
-
-#switch::after {
-    background-color: #38BB8F;
-}
 
 
 #breathbox {
@@ -157,6 +159,10 @@ li > a:hover {
     100% {        content: "exhale"; letter-spacing: 0.0ch;}
     }
 
+
+
+    
+
 footer {
     position: absolute;
     bottom: 1%;
@@ -169,12 +175,8 @@ footer {
     padding: 3px;
 }
 
-#foot-txt {
-    float: inline-start;
-}
-
-#foot-x {
-    float: inline-end;
+.shortcut {
+    color: black;
 }
 
 
@@ -183,9 +185,6 @@ footer {
     color: #FFF4D8;
 }
 
-#option-btn::after {
-    background-color: #FBC29F;
-}
 
 
 /* DARK MODE */
@@ -211,9 +210,40 @@ background-color: #FFF4D8;
 color: #FFF4D8;
 }
 
-.day-mode {
-display: none;
+.dark-mode .shortcut {
+    color: #FFF4D8;
 }
+
+#menu {
+    float: inline-start;
+}
+
+#breath-menu {
+    display: none;
+}
+
+.breath-mode #breath-menu {
+    display: inline-flex;
+}
+
+.breath-mode #main-menu {
+    display: none;
+}
+
+.zen-mode #switch {
+    display: none;
+}
+
+.zen-mode #menu {
+    display: none;
+}
+
+
+.letter {
+    background-color:#b1abab;
+    padding: 1px 3px 1px 3px;
+}
+
 
 /* MEDIA QUERIES */
 
