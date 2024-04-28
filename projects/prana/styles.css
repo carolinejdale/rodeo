@@ -1,0 +1,262 @@
+* {
+    font-family: 'Roboto', 'Inconsolata', 'IBM Plex Mono';
+    margin: 0px;
+}
+
+body {
+    background-color: #FFF4D8;
+    color: #484E55;
+}
+
+nav {
+    float: left;
+    width: 98%;
+    margin: 1rem;
+}
+
+
+#dropdown {
+    display: none;
+}
+
+li {
+    display: inline;
+    float: inline-end;
+    padding-right: 2rem;
+}
+
+li > a {
+    color: #474948;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+a {
+    color: #38BB8F;
+}
+
+/*
+li > a:hover {
+    text-decoration: dashed;
+    color: #38BB8F;
+} */
+
+#switch {
+    color: #FFF4D8;
+    background-color: #38BB8F;
+}
+
+
+#switch::after {
+    background-color: #38BB8F;
+}
+
+
+/*
+#switch:focus {
+    color: #000000;
+    background-color: #FFF4D8;
+}
+*/
+
+
+
+#breathbox {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#breath {
+    z-index: 1;
+    position: sticky;
+    text-align: center;
+    background-color: #38BB8F;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    padding: 10%;
+    background-color: #38BB8F;
+    animation-name: breath;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    transition: all 5s ease-in-out;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#inhale-exhale {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    animation-name: breathInstruction;
+    animation-delay: 0s;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#inhale-exhale::before {
+    position: relative;
+}
+
+#inhale-exhale::after {
+    position: relative;
+    content: "exhale";
+    animation: breathInstruction 10s linear infinite;
+    transition: all 5s ease-in-out;
+}
+
+@keyframes breath {
+    0% {
+        transform: scale(0);
+    }
+
+    25% {
+        transform: scale(0.5);
+    }
+
+    40% {
+        transform: scale(0.9);
+        background-color: #FBC29F;
+    }
+
+    50% {
+        transform: scale(1.0);
+        background-color: #FBC29F;
+    }
+
+    60% {
+        transform: scale(0.9);
+    }
+
+    75% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(0);
+        background-color:#38BB8F;
+    }
+    }
+
+
+@keyframes breathInstruction {
+    0% {        content: "inhale";
+        filter: hue-rotate(360deg);}
+    10% {        content: "inhale";}
+    20% {        content: "inhale";}
+    30% {        content: "inhale";}
+    45% {        content: "hold";}
+    50% {        content: "hold"; letter-spacing: 0.5ch;}
+    55% {        content: "exhale";}
+    100% {        content: "exhale"; letter-spacing: 0.0ch;}
+    }
+
+
+
+    
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    width: 98%;
+    color: #484E55;
+    float: left;
+    display: inline;
+    border: 1px dashed black;
+    margin: 1px;
+    padding: 3px;
+}
+
+.shortcut {
+    color: black;
+}
+
+
+#option-btn {
+    background-color: #38BB8F;
+    color: #FFF4D8;
+}
+
+
+
+/* DARK MODE */
+.dark-mode {
+    background-color: #27292c;
+    color: #FFF4D8;
+}
+
+.dark-mode li > a {
+color: #78d0b2;
+}
+
+.dark-mode footer {
+color: #FFF4D8;
+border-color: #FFF4D8;
+}
+
+.dark-mode switch {
+background-color: #FFF4D8;
+}
+
+.dark-mode switch::after {
+color: #FFF4D8;
+}
+
+.dark-mode .shortcut {
+    color: #FFF4D8;
+}
+
+#menu {
+    float: inline-start;
+}
+
+#breath-menu {
+    display: none;
+}
+
+.breath-mode #breath-menu {
+    display: inline-flex;
+}
+
+.breath-mode #main-menu {
+    display: none;
+}
+
+.zen-mode #switch {
+    display: none;
+}
+
+.zen-mode #menu {
+    display: none;
+}
+
+
+.letter {
+    background-color:#b1abab;
+    padding: 1px 3px 1px 3px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 700) {
+    #navbar {
+        display: none;
+    }
+
+    #dropdown {
+        position: relative;
+        display: inline-block;
+
+
+    }
+    
+}
