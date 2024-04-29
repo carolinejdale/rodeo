@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="title"><h1>SQL</h1> 
+        <header><h2>Structural Query Language</h2></header>
+        </div>
+        <ul id="nav-menu">
+        <li><a class="nav-link" href="#about_SQL">About SQL</a></li>
+        <li><a class="nav-link" href="#CREATE_command">CREATE command</a></li>
+        <li><a class="nav-link" href="#INSERT_command">INSERT command</a></li>
+        <li><a class="nav-link" href="#SELECT_command">SELECT command</a></li>
+        <li><a class="nav-link" href="#SQLite">SQLite</a></li>
+        </ul>
+    </nav>
+            <!--This 'main' element should contain the page's main content (technical documentation)-->
+          <main id="main-doc">
+            <!--The ID of each section should match the header for that section, with any spaces replaed with underscores-->
+            <section class="main-section" id="about_SQL">
+              <header><h2>About SQL</h2></header>
+                <p>SQL, or Structural Query Language, is a standard language used to communicate with a <a href="#rel-db">relational database</a> to store, retrieve and manipulate data.</p>
+                 
+                <p id="rel-db">
+                    A relational database is configured to identify relationships between data items, which are usually stored in tables.</p>
+                <p>Keep reading to learn more about SQL syntax.</p>
+            </section>
+            <section class="main-section" id="CREATE_command">
+             <header><h2>CREATE command</h2></header>
+                <p>The CREATE command in SQL creates a table in a database.
+
+                    The command structure is as as follows:</p>
+                <code>CREATE TABLE table_name (  
+                    column_name1 data_type,  
+                    column_name2 data_type,  
+                    ... );</code>
+                <p><h3>Example</h3>
+                    The following snippet of SQL creates a table of students in a database:</p>
+                <code>	CREATE TABLE Student ( 
+                    Student_ID VCHAR(10),
+                    Student_Fname VCHAR(20), 
+                    Student_LName VCHAR(20), 
+                    Student_Email VCHAR(20),  
+                    PRIMARY KEY (Student_ID)  
+                );
+                </code>
+                <p>In this example:
+                    <ul>
+                        <li><code>VCHAR</code> is a variable character string data type. </li>
+                       <li> The number in brackets after <code>VCHAR</code> (e.g. <code>VCHAR(10)</code> limits the number of characters in the string to a maximum (e.g. 10).</li>
+                    
+                    The <code>PRIMARY KEY</code> can be used to uniquely identify a row or record in the table. Here, <code>Student_ID</code> is the primary key; its value can uniquely identify a student record.</p>
+            </section>
+            <section class="main-section" id="INSERT_command">
+              <header><h2>INSERT command</h2></header>
+                <p>The INSERT command inserts a record into a table.</p>
+                <p>The command structure is as follows:</p>
+                <code>INSERT INTO table_name VALUES (value1, value2, ...);</code>
+                <p><h4>Example</h4>
+                    The following SQL command inserts a student record into the table "Student":</p>
+                    <code>	INSERT INTO Student VALUES (  
+                            '2017031001', 'James', 'Brown', 'jbrown@gmail.com'  
+                    );</code>
+                <p>where character string data should be quoted in the command.</p>
+                        
+            </section>
+             <section class="main-section" id="SELECT_command">
+              <header><h2>SELECT command</h2></header>
+                <p>The SELECT command selects a record from a table.</p>
+                <p> The simplest command structure is as follows:</p>
+                <code>	 SELECT column1, column2, ...  
+                    FROM table_name;</code>
+                <p><h4>Example</h4> To select a record from "Students" table:
+                </p>
+                <code>SELECT ID, name, address, ...  
+                    FROM Students;</code>
+                <p><h3>SELECT all</h3>To select <em>all</em> the columns available in a table, we would use an asterisk as per the following syntax:</p>
+                <code>SELECT * from table_name*</code>
+                <p><h4>Example</h4>To select all columns in our "Students" table:</p>
+                <code>SELECT * FROM students;</code>
+                <p><h3>SELECT specific</h3>To select <em>specific</em> columns available in a table, we would use the WHERE clause per the following syntax:</p>
+                <code>SELECT column1, column2, ... 
+                FROM table_name  
+                WHERE condition;</code>
+                <p><h4>Example</h4>To select records with first name "John" from our "Students" column:</p>
+                <code>SELECT * FROM Student  
+                    WHERE Student_FName = 'John';</code>
+            </section>
+             <section class="main-section" id="SQLite">
+              <header><h2>SQLite</h2></header>
+                <p>SQLite is a database engine that can be used for:
+                   <ol>
+                    <li>setting up a table</li>
+                    <li>saving the data from a form to that table</li>
+                    <li>retrieving the data from the table</li>
+                   </ol>
+                </p>
+                    <p>SQLite is a self-contained, serverless, zero-configuration and transactional engine.</p>
+                    
+                    <p>Unlike most other SQL databases, SQLite does not have a separate server process but rather reads and writes directly to ordinary disk files. A complete SQL database that includes multiple tables, indices, triggers and view is contained in a single disk file.</p>
+            </section>
+          </main>
+        </body>
+      </html>
+</body>
+</html>

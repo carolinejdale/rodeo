@@ -1,0 +1,81 @@
+
+<!-- 
+TO DO:
++ Find a way to utilise CSS flexbox
++ Find & insert logo
++ Change title
++ Create stylesheet styles.css
++ Create nav element #nav-bar
++ Fix navbar to top of viewport
++ Add a media query
++ Embed product video
++ Create form with id #form
++ Add email field to form with placeholder text
++ Create submit input with corresponding id #submit which submits to https://www.freecodecamp.com/email-submit.
+
+ -->
+
+ <!doctype html>
+ <html lang="en">
+ <html>
+     <head>
+       <meta charset="UTF-8"/>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <title>the placeholder shop</title>
+       <link rel="stylesheet" href="styles.css"/>
+     </head>
+   <body>
+     <header id="header">
+      <nav id="nav-bar">
+        <ul>
+          <li class="nav-li"><a href="#about">about</a></li>
+          <li class="nav-li"><a href="#products">products</a></li>
+          <li class="nav-li"><a href="#video">video</a></li>
+          <li class="nav-li"><a href="#form">form</a></li>
+        </ul>
+      </nav>
+       <img src="https://placehold.co/1000x200/8fcdb6/FFF4D8.png?text=the+placeholder+shop" id="header-img" alt="the placeholder shop logo"/>
+     <!-- <span id="caption">where placeholders come to life</span> -->
+      </header>
+     
+
+     <main>
+      <div class="section" id="about">
+        <h2 class="section-head">About Us</h2>
+        <div id="about-txt">Welcome to The Placeholder Shop, home to the World Wide Web's most luxurious and high-quality placeholder images, video, text. If you have a passion for graphic design or simply for holding places in a queue, you're bound to find something that appeals. Why not browse our <a href="#products">products</a>, consider a bespoke <a href="#video">video</a> for your next design project, or even fill out our enjoyable mailing list <a href="#form">signup form</a> - bound to appeal to form rookies and  aficionados alike!</div>
+      </div>
+
+      <div class="section" id="products">
+        <h2 class="section-head">Products</h2>
+        <div class="product-tiles">
+          <div class="tile" id="product-1"><img src="https://placehold.co/300/pink/white">White on pink</div>
+          <div class="tile" id="product-2"><img src="https://placehold.co/300/white/pink">Pink on white</div>
+          <div class="tile" id="product-3"><img src="https://placehold.co/300/AA80FF/black">Black on lilac</div>
+          <div class="tile" id="product-4"><img src="https://placehold.co/300/black/AA80FF">Lilac on black</div>
+          <div class="tile" id="product-6"><img src="https://placehold.co/300/FFF4D4/0CB074">Emerald on ivory</div>
+          <div class="tile" id="product-7"><img src="https://placehold.co/300/0CB074/FFF4D4">Ivory on emerald</div>
+        </div>
+      </div>
+
+      <div class="section" id="video">
+        <h2 class="section-head">Video</h2>
+        Don't like standing still? We even craft bespoke placeholder videos!
+        <video width="1000" height="600" autoplay muted>
+        <source src="https://placehold.co/1000x600/38BB8F/white.mp4?text=a+placeholder+video" type="video/mp4">
+      </video>
+      </div>
+
+      <div class="section" id="mail-list">
+        <h2 class="section-head">Mailing List</h2>
+          <div id="mail-list-txt">To sign up to our mailing list and receive our weekly roundup of hot new placeholder shapes, sizes and colours as well as special offers and early access to our famous sales, enter your email address below. You don't like spam and nor do we - promise. </div>
+          <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+            Email address: <input id="email" type="email" placeholder="user@domain.com" required>
+      </input>
+      <button id="submit" form="form" value="Submit">Submit</button>
+    </form>
+      </div>
+
+     </main>
+   </body>
+   <footer>eternal thanks to <a href="http://placehold.co">placehold.co</a> for all the beautiful placeholders</footer>
+ </html>
