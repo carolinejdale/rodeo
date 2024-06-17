@@ -61,8 +61,6 @@ li > a:hover {
 }
 */
 
-
-
 #breathbox {
     display: flex;
     width: 100%;
@@ -159,10 +157,6 @@ li > a:hover {
     100% {        content: "exhale"; letter-spacing: 0.0ch;}
     }
 
-
-
-    
-
 footer {
     position: absolute;
     bottom: 1%;
@@ -184,8 +178,6 @@ footer {
     background-color: #38BB8F;
     color: #FFF4D8;
 }
-
-
 
 /* DARK MODE */
 .dark-mode {
