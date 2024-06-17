@@ -28,8 +28,7 @@ const aboutPopup = new Popup({
       I am not a doctor, I am just a person who likes to observe my breath.
       ---
       A web app by Caroline J. Dale (2024).
-      URL: {a-https://caro.rodeo}[caro.rodeo]
-      EML: {a-mailto:carolinejdale@gmail.com}{@gmail.com}
+      To learn more about me, visit {a-https://caro.rodeo}[caro.rodeo] or {a-mailto:carolinejdale@gmail.com}[email me].
       Hit ESC to exit.`
 });
 
