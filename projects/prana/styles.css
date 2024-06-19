@@ -1,5 +1,5 @@
 * {
-    font-family: 'Inconsolata', 'IBM Plex Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
     margin: 0px;
 }
 
@@ -8,55 +8,11 @@ body {
     color: #484E55;
 }
 
-nav {
-    float: left;
-    width: 98%;
-    margin: 1rem;
+h1 {
+    font-family: 'Roboto Mono', monospace;
 }
 
-li {
-    display: inline;
-    float: inline-end;
-    padding-right: 2rem;
-}
-
-li > a {
-    color: #474948;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-
-a {
-    color: #38BB8F;
-}
-
-/*
-li > a:hover {
-    text-decoration: dashed;
-    color: #38BB8F;
-} */
-
-/*
-#switch {
-    color: #FFF4D8;
-    background-color: #38BB8F;
-}
-
-
-#switch::after {
-    background-color: #38BB8F;
-} */
-
-
-/*
-#switch:focus {
-    color: #000000;
-    background-color: #FFF4D8;
-}
-*/
-
+/* Styling for animation container */
 #breathbox {
     display: flex;
     width: 100%;
@@ -67,6 +23,7 @@ li > a:hover {
     padding-bottom: 10%;
 }
 
+/* Animation */
 #breath {
     z-index: 1;
     position: sticky;
@@ -140,7 +97,6 @@ li > a:hover {
     }
     }
 
-
 @keyframes breathInstruction {
     0% {        content: "inhale";
         filter: hue-rotate(360deg);}
@@ -153,51 +109,58 @@ li > a:hover {
     100% {        content: "exhale"; letter-spacing: 0.0ch;}
     }
 
+/* Styling for footer menu */
 footer {
     position: absolute;
     bottom: 1%;
-    width: 98%;
+    min-width: 95%;
     color: #484E55;
-    float: left;
-    display: inline;
-    border: 1px dashed black;
+    border: 1px dashed #484E55;
     margin: 1px;
     padding: 3px;
 }
+
+#main-menu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+} 
 
 .shortcut {
     color: black;
 }
 
-
-#option-btn {
-    background-color: #38BB8F;
-    color: #FFF4D8;
-}
-
-/* DARK MODE */
-.dark-mode {
+/* NIGHT MODE */
+.night-mode {
     background-color: #27292c;
     color: #FFF4D8;
 }
 
-.dark-mode li > a {
+#dayBtn {
+    display: none;
+}
+
+.night-mode #dayBtn {
+    display: inline;
+}
+
+.night-mode #nightBtn {
+    display: none;
+}
+
+.night-mode li > a {
 color: #78d0b2;
 }
 
-.dark-mode .shortcut {
+.night-mode .shortcut {
     color: #FFF4D8;
     }
 
-.dark-mode footer {
+.night-mode footer {
         color: #FFF4D8;
         border: 1px dashed #FFF4D8;
     }
-
-
-#menu {
-    float: inline-start;
-}
 
 .letter {
     background-color:#b1abab;
@@ -205,48 +168,94 @@ color: #78d0b2;
 }
 
 .zen-mode footer {
+    border: 0px;
+}
+.zen-mode #mobile-menu {
     display: none;
 }
 
-.about #closePopup {
-    visibility: hidden;
-}
-
-.about #closePopup:after {
-    visibility: visible;
-    content:'close popup';
-}
-
-/* #popupToggle:after {
-    
-}*/
-
-#about-popup:after {
+.zen-mode #main-menu {
     display: none;
 }
 
-/* BREATH MENU - NOT IN USE
-#breath-menu {
+.zen-mode #exit-zen {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    height: 16px;
+    opacity: 0.5;
+    background-color: #FFF4D8;
+    border-radius: 10px;
+}
+
+#mobile-menu {
     display: none;
 }
 
-.breath-mode #breath-menu {
-    display: inline-flex;
-}
-
-.breath-mode #main-menu {
+#exit-zen {
     display: none;
-}
-*/
-
-
-
+} 
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 700px) {
 
-@media screen and (max-width: 700) {
-    #navbar {
+    #inhale-exhale {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        border: 0px;
+    }
+
+    #main-menu {
         display: none;
     }
+
+    #mobile-menu {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+
+    #mobile-menu button {
+        font-size: 1.05rem;
+        height: 30px;
+        min-width: 30%;
+    }
     
+    #mobile-menu button:active {
+        background-color: #38BB8F;
+    }
+
+    #mobile-menu button:focus {
+        background-color: #78d0b2;
+    }
+
+    #mobile-menu span {
+        text-decoration: underline;
+        text-decoration-color: #b1abab;
+    }
+
+    .night-mode footer {
+        border: 0px;
+    }
+
+    .zen-mode #zen-menu {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: fit-content;
+    }
+
+    .zen-mode #exit-zen {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    .zen-mode #exit-zen:active {
+        background-color: #38BB8F;
+    }
 }

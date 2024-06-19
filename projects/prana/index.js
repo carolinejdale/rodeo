@@ -1,13 +1,8 @@
 let element = document.body;
 
-// Defining function pranaManu (shows/hides breath style menu)
-// function pranaMenu() {
-//  element.classList.toggle("breath-mode");
-// }
-
-// Defining function toggleDark (toggles day/night mode)
-function toggleDark() {
-  element.classList.toggle("dark-mode");
+// Defining toggleNight function (toggles day/night mode)
+function toggleNight() {
+  element.classList.toggle("night-mode");
 }
 
 // Defining toggleZen function (shows/hides footer menu)
@@ -18,7 +13,8 @@ function toggleZen() {
 // Defining aboutPopup function
 const aboutPopup = new Popup({
   id: "about-popup",
-  title: "about this app",
+  title: "about prana",
+  fontSizeMultiplier: "0.7",
   backgroundColor: "#474948",
   textColor: "#FFF4D8",
   closeColor: "#FFF4D8",
@@ -29,31 +25,22 @@ const aboutPopup = new Popup({
   borderRadius: "0px",
   borderColor: "#FFF4D8",
   borderWidth: "1px",
-  font: "Inconsolata",
   hideOnOutsideClick: true,
-  css: `@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');`,
   content: `
-      Breathe along with the animation for as long as feels good.
-      Please do not continue if it does not feel good.
-      I am not a doctor, just a person who likes to observe my breath.
+      INSTRUCTIONS: Breathe along with the animation for as long as feels good.
+      PLEASE NOTE: I am not a doctor, just a person who likes to observe my breath. This app was not designed for clinical purposes; please take responsibility for your own health.
       ---
-      A web app by Caroline J. Dale (2024).
-      To learn more about me, visit {a-https://caro.rodeo}[caro.rodeo] or {a-mailto:carolinejdale@gmail.com}[email me].
-      Press {green bold}[x] or {green bold}[ESC] key to exit.`,
+      (Prana is a web app made in 2024 by me, Caroline J. Dale. To learn more, check out my {a-https://github.com/carolinejdale}[GitHub], visit {a-https://caro.rodeo}[my website] or {a-mailto:carolinejdale@gmail.com}[email me].)
+      `,
+    font: "Roboto Mono",
+    css: `@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');`,
 });
 
-// FUNCTIONS TO BE DEFINED
-// function coherentBreath() {}
-// function ladderBreath() {}
-// function fourSixBreath() {}
-// function sixSixBreath() {}
-// function showOptions() {}
-// function about() {}
-
-// DEFINING KEYBOARD SHORTCUTS
+// Defining keyboard shortcuts
 // Defining object to track if key is pressed
 var isKeyPressed = {
   a: false, // 65
+  d: false, // 68
   m: false, // 109
   n: false, // 110
   o: false, // 111
@@ -67,22 +54,21 @@ document.onkeydown = (keyDownEvent) => {
   // Tracking key down click 
   isKeyPressed[keyDownEvent.key] = true;  
     
-  if (isKeyPressed["n"]) {
-    toggleDark();
+  if (isKeyPressed["n"] || isKeyPressed["N"] || isKeyPressed["d"] || isKeyPressed["D"]) {
+    toggleNight();
     }
       
-  if (isKeyPressed["o"]) {
+  if (isKeyPressed["m"] || isKeyPressed["M"]) {
     toggleZen();
   }
   
-  if (isKeyPressed["a"]) {
-    aboutPopup.show();
+  if (isKeyPressed["a"] || isKeyPressed["A"]) {
+    aboutPopup.show(); 
   }
 
-  if (isKeyPressed["x"]) {
+  if (isKeyPressed["x"] || isKeyPressed["X"]) {
    aboutPopup.hide();
   }
-
 };
 
 // Adding keyup event handler
@@ -92,19 +78,3 @@ document.onkeydown = (keyDownEvent) => {
  // Tracking keyUp click
  isKeyPressed[keyUpEvent.key] = false;
  };
-
-  // Tracking key release
-  /*
-  if (!isKeyPressed["m"]) {
-    footTxtMenu.style.display = "none";
-    footTxt.style.display = "inline-block";
-  }
-  */
-
-  // Showing text indicating when key is released
-  /*
-  if (!isKeyPressed["m"]) {
-  footTxt.style.display = "none";
-  footTxtMenu.style.display = "flex";
-}
-*/
