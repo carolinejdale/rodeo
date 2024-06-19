@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', 'Inconsolata', 'IBM Plex Mono';
+    font-family: 'Inconsolata', 'IBM Plex Mono', monospace;
     margin: 0px;
 }
 
@@ -12,11 +12,6 @@ nav {
     float: left;
     width: 98%;
     margin: 1rem;
-}
-
-
-#dropdown {
-    display: none;
 }
 
 li {
@@ -43,6 +38,7 @@ li > a:hover {
     color: #38BB8F;
 } */
 
+/*
 #switch {
     color: #FFF4D8;
     background-color: #38BB8F;
@@ -51,7 +47,7 @@ li > a:hover {
 
 #switch::after {
     background-color: #38BB8F;
-}
+} */
 
 
 /*
@@ -189,27 +185,47 @@ footer {
 color: #78d0b2;
 }
 
-.dark-mode footer {
-color: #FFF4D8;
-border-color: #FFF4D8;
-}
-
-.dark-mode switch {
-background-color: #FFF4D8;
-}
-
-.dark-mode switch::after {
-color: #FFF4D8;
-}
-
 .dark-mode .shortcut {
     color: #FFF4D8;
-}
+    }
+
+.dark-mode footer {
+        color: #FFF4D8;
+        border: 1px dashed #FFF4D8;
+    }
+
 
 #menu {
     float: inline-start;
 }
 
+.letter {
+    background-color:#b1abab;
+    padding: 1px 3px 1px 3px;
+}
+
+.zen-mode footer {
+    display: none;
+}
+
+.about #closePopup {
+    visibility: hidden;
+}
+
+.about #closePopup:after {
+    visibility: visible;
+    content:'close popup';
+}
+
+/* #popupToggle:after {
+    
+}*/
+
+#about-popup:after {
+    display: none;
+}
+
+/* BREATH MENU - NOT IN USE
 #breath-menu {
     display: none;
 }
@@ -221,20 +237,9 @@ color: #FFF4D8;
 .breath-mode #main-menu {
     display: none;
 }
-
-.zen-mode #switch {
-    display: none;
-}
-
-.zen-mode #menu {
-    display: none;
-}
+*/
 
 
-.letter {
-    background-color:#b1abab;
-    padding: 1px 3px 1px 3px;
-}
 
 
 /* MEDIA QUERIES */
@@ -242,13 +247,6 @@ color: #FFF4D8;
 @media screen and (max-width: 700) {
     #navbar {
         display: none;
-    }
-
-    #dropdown {
-        position: relative;
-        display: inline-block;
-
-
     }
     
 }

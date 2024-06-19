@@ -7,11 +7,9 @@
     <title>breathe in</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="prana.ico" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  </head>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">  </head>
     <body>
        <header>
         <!-- navbar currently not required -->
@@ -20,14 +18,12 @@
             <li><button id="switch" onclick="toggleDark()"><span id="night">night mode</span>
            ></button></li>    
              <li><a href="/ladderbreath.html">ladder breath</a></li>
-            <li><a href="/boxbreath.html">box breath</a></li>
-            <li><a href="/fourtosix.html">4:6 breath</a></li>   
-            <li><a href="/fourtosix.html">5:6 breath</a></li>
+a:6 breath</a></li>
             </ul>
           </div>
          </nav>	-->
        </header>
-       <main class>
+       <main>
         <div id="breathbox">
          <div id="breath"></div>
          <div id="inhale-exhale"></div>
@@ -37,21 +33,22 @@
        
         <div id="main-menu" class="options">keyboard shortcuts: 
          <!-- <span class="shortcut"><button class="letter" onclick="pranaMenu()">m</button> <u>m</u>ore breath styles </span> -->
-          <span class="shortcut"><button class="letter" onclick="toggleDark()">n</button> toggle <u>n</u>ight mode </span> 
-          <span class="shortcut"><button class="letter" onclick="aboutPopup()">a</button> about
+          <span class="shortcut"><button class="letter" id="dark" onclick="toggleDark()">n</button> toggle <u>n</u>ight mode </span> 
+          <span class="shortcut" id="popupToggle"><button class="letter" id="popupButton" onclick="aboutPopup.show()">a</button> about
           </span>
-          <span class="shortcut"><button class="letter" onclick="hideOptions()">o</button> hide/show <u>o</u>ptions </span> 
+          <span class="shortcut"><button class="letter" id="zen" onclick="toggleZen()">o</button> hide/show <u>o</u>ptions </span> 
         </div>
         
             <!-- onclick functions to be defined -->
-        <div id="breath-menu">
+        <!-- <div id="breath-menu">
           <span class="shortcut"><button class="letter" onclick="coherentBreath()">1</button> coherent breathing<span>
             <span class="shortcut"><button class="letter" onclick="ladderBreath()">2</button> ladder breathing<span>
           <span class="shortcut"><button class="letter" onclick="fourSixBreath()">4</button> 4:6 breathing<span>
            <span class="shortcut"><button class="letter" onclick="fiveSixBreath()">6</button> 6:6 breathing<span>
           <span class="shortcut"><button class="letter" onclick="showOptions()">m</button> return to <u>m</u>ain menu<span>
-          </div>
+          </div> -->
         </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.3/popup.min.js"></script>
     <script src="index.js"></script>
     </body>
 </html>

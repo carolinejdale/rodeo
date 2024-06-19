@@ -1,6 +1,5 @@
 let element = document.body;
 
-
 // Defining function pranaManu (shows/hides breath style menu)
 // function pranaMenu() {
 //  element.classList.toggle("breath-mode");
@@ -11,27 +10,37 @@ function toggleDark() {
   element.classList.toggle("dark-mode");
 }
 
-// Defining function hideOptions (shows/hides all menus and buttons)
-function hideOptions() {
+// Defining toggleZen function (shows/hides footer menu)
+function toggleZen() {
   element.classList.toggle("zen-mode");
 }
 
+// Defining aboutPopup function
 const aboutPopup = new Popup({
   id: "about-popup",
   title: "about this app",
-  css: `@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');`,
-  font: "Roboto Mono",
-  backgroundColor: "#38BB8F",
+  backgroundColor: "#474948",
+  textColor: "#FFF4D8",
+  closeColor: "#FFF4D8",
+  titleColor: "#FFF4D8",
+  linkColor: "#38BB8F",
+  display: "none",
+  underlineLinks: true,
+  borderRadius: "0px",
+  borderColor: "#FFF4D8",
+  borderWidth: "1px",
+  font: "Inconsolata",
+  hideOnOutsideClick: true,
+  css: `@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');`,
   content: `
       Breathe along with the animation for as long as feels good.
       Please do not continue if it does not feel good.
-      I am not a doctor, I am just a person who likes to observe my breath.
+      I am not a doctor, just a person who likes to observe my breath.
       ---
       A web app by Caroline J. Dale (2024).
       To learn more about me, visit {a-https://caro.rodeo}[caro.rodeo] or {a-mailto:carolinejdale@gmail.com}[email me].
-      Hit ESC to exit.`
+      Press {green bold}[x] or {green bold}[ESC] key to exit.`,
 });
-
 
 // FUNCTIONS TO BE DEFINED
 // function coherentBreath() {}
@@ -41,46 +50,48 @@ const aboutPopup = new Popup({
 // function showOptions() {}
 // function about() {}
 
-// CUSTOM KEYBOARD SHORTCUTS
+// DEFINING KEYBOARD SHORTCUTS
 // Defining object to track if key is pressed
 var isKeyPressed = {
-  a: false,
+  a: false, // 65
   m: false, // 109
   n: false, // 110
   o: false, // 111
+  x: false, // 120
 }
 
 // Adding keyDown and keyUp event handlers
 document.onkeydown = (keyDownEvent) => {  
-  // Preventing default key actions...
+  // Preventing default key actions
   keyDownEvent.preventDefault();
   // Tracking key down click 
   isKeyPressed[keyDownEvent.key] = true;  
-
-  // Checking custom shortcut
- // if (isKeyPressed["m"]) {
- //   pranaMenu();
- //   } 
     
-    if (isKeyPressed["n"]) {
+  if (isKeyPressed["n"]) {
     toggleDark();
     }
       
   if (isKeyPressed["o"]) {
-    hideOptions();
+    toggleZen();
   }
-
+  
   if (isKeyPressed["a"]) {
-    aboutPopup();
+    aboutPopup.show();
   }
-  };
 
+  if (isKeyPressed["x"]) {
+   aboutPopup.hide();
+  }
+
+};
 
 // Adding keyup event handler
-/* document.onkeyup = (keyUpEvent) => {
-  // Preventing default key actions...
-  keyUpEvent.preventDefault();
-}; */
+ document.onkeyup = (keyUpEvent) => {
+  // Preventing default key actions
+ keyUpEvent.preventDefault();
+ // Tracking keyUp click
+ isKeyPressed[keyUpEvent.key] = false;
+ };
 
   // Tracking key release
   /*
@@ -97,7 +108,3 @@ document.onkeydown = (keyDownEvent) => {
   footTxtMenu.style.display = "flex";
 }
 */
-
-document.addEventListener('click', () => {
-  aboutPopup.show();
-});
