@@ -1,11 +1,11 @@
 # Prana
+## About this app
+Prana is a small self-initiated project I designed for myself. I wanted an app I could flick over to when I wanted to catch a moment's breath, or to play in the background when I need something to ground me. It is based on the yogic principle of pranayama, or controlled breathing, although my deployment of it here is a gross simplification of the techniques and knowledge available in this ancient Indian practice.
+
 ## Instructions
 Breathe along with the animation for as long as feels good.
 
 __WARNING:__ Prana was not designed with clinical use in mind. Please consult your doctor to learn if and which breathwork practices may be appropriate for you.
-      
-## About this app
-Prana is a small self-initiated project I designed for myself. I wanted an app I could flick over to when I wanted to catch a moment's breath, or to play in the background when I need something to ground me. It is based on the yogic principle of pranayama, or controlled breathing, although my deployment of it here is a gross simplification of the techniques and knowledge available in this ancient Indian practice.
 
 ## Development notes
 
