@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+ <head>
+	 <title>todo today</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Germania+One&family=Inconsolata&display=swap" rel="stylesheet">
+	  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">	
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="intro col-12">
+       		 <h1>todo<span class="green">&#x273F;</span>today</h1>
+			</div>
+		</div>
+    </header>
+
+		<main>
+		<div class="row">
+			<div class="col-12" id="input-bar">
+				<input id="userInput" type="text" placeholder="what do i need to do today?" maxlength="60">
+				<button id="enter">&#x273F;</button>
+			</div>
+		</div>
+
+		<!-- Empty list -->
+		<div class="row">
+			<div class="listItems col-12">
+				<ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+				</ul>
+			</div>
+		</div>
+	</main>
+	<script src="index.js"></script>
+</body>
+</html>

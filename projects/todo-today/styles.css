@@ -1,0 +1,161 @@
+* {
+	border: 1px solid black;
+}
+
+body {
+ background: #FFFFFF;
+ text-align: center;
+ font-family: 'Inconsolata', monotype;
+ padding-bottom: 0px;
+ }
+
+.intro {
+ margin: 30px 0px;
+ font-weight: bold;
+}
+
+h1 {
+	color: #ffc9e4;
+  	text-transform: lowercase;
+  	font-size: 5em;
+	font-weight: 800;
+  	font-family: 'Inconsolata', monotype;
+  	margin: 0px auto 10px auto;
+}
+
+p {
+	font-weight: 400;
+}
+
+#enter {
+	border: 1px solid #000000;
+	padding: 5px 10px 5px 10px;
+	border-radius: 50px;
+	color: #ffc9e4;
+	background-color: #000000;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#enter:hover {
+	background-color: #ffc9e4;
+	color: #000000;
+}
+
+
+ul {
+/*	display: inline-block;
+	float: left;
+    text-align: left;
+  /*  margin: 20px 20% 20% 20px; */
+  /*  padding-inline-start: 0px; */
+  /*  margin-block-start: 1em;
+    margin-block-end: 5em; */
+	padding: 0;
+	width: 60%;
+	border: 1px solid black;
+	height: 50vh;
+}
+
+li {
+	list-style: none;
+	padding: 8px 10px;
+	color: #000000;
+/*	may reinstate this at a later date */
+/*	text-transform: lowercase; */
+	font-weight: 400;
+	border: 1px solid #000000;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #ffc9e4;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5 ease;
+}
+
+li:hover {
+	border: 1px solid #51DF70;
+  	background-color: #000000;
+  	color: #FFFFFF;
+}
+
+li > button {
+	font-weight: normal;
+	background: #ffc9e4;
+  	border-radius: 50px;
+	margin-left: 10px;
+	border: none;
+	float: right;
+	color: #000000;
+	font-weight: 400;
+}
+
+#input-bar {
+	width: 60%;
+}
+
+input {
+	border: 1px solid #000000;
+ 	border-radius: 5px;
+	padding: 10px;
+	color: #76CFE0;
+	width: 80%;
+	font-family: 'Inconsolata', monotype;
+}
+
+::placeholder {
+  color: #000000;
+  font-family: 'Inconsolata', monotype;
+}
+
+:focus {
+ outline: 1px solid black;
+ color: white;
+}
+
+:focus::placeholder {
+	font-family: 'Inconsolata', monotype;
+}
+
+#userInput {
+  border: 1px solid black;
+  color: black;
+}
+
+#userInput:focus {
+  border: 0px solid black;
+  background: #51DF70;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: 'Inconsolata', monotype;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-family: 'Inconsolata', monotype;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-family: 'Inconsolata', monotype;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Inconsolata', monotype;
+}
+
+
+.done {
+	background: #51DF70 !important;
+	color: #000000;
+}
+
+.delete {
+	display: none;
+}
+
+.green {
+  color: #51DF70;
+}
