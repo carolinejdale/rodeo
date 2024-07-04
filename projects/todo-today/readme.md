@@ -29,6 +29,8 @@ This project was my first exposure to a number of concepts, including:
 + <a href="https://codepen.io/JohnPaulFich/pen/MXmzzM">Todo List, Plain JS</a> by John Fichera (<a href="https://codepen.io/JohnPaulFich">@JohnPaulFich</a>)
 
 ## Updates
+### 20240704 
++ Minor cosmetic update and media queries added.
 ### 20240620
 + Created readme.md.
 
