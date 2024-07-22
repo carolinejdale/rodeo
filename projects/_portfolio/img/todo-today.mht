@@ -1,0 +1,157 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://caro.rodeo/projects/tt/todo_today.html
+Subject: todo today
+Date: Mon, 22 Jul 2024 15:17:45 +1000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--gvWJ8EXDK3bTIBYu6963LRBuoNZ7mjQSUvadCi6a27----"
+
+
+------MultipartBoundary--gvWJ8EXDK3bTIBYu6963LRBuoNZ7mjQSUvadCi6a27----
+Content-Type: text/html
+Content-ID: <frame-6BBD474ACB77EC9E680E1FB37085C70F@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://caro.rodeo/projects/tt/todo_today.html
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3Dwindows-1252">
+	 <title>todo today</title>
+	<link rel=3D"stylesheet" type=3D"text/css" href=3D"https://caro.rodeo/proj=
+ects/tt/todo_today.css">
+	<link rel=3D"icon" href=3D"https://caro.rodeo/projects/tt/todo_today.ico" =
+type=3D"image/x-generic">
+  	<link rel=3D"preconnect" href=3D"https://fonts.googleapis.com/">
+  	<link rel=3D"preconnect" href=3D"https://fonts.gstatic.com/" crossorigin=
+=3D"">
+  	<link href=3D"https://fonts.googleapis.com/css2?family=3DGermania+One&am=
+p;family=3DInconsolata&amp;display=3Dswap" rel=3D"stylesheet">
+	</head>
+<body>
+	<div class=3D"container">
+		<div class=3D"row">
+			<div class=3D"intro col-12">
+        <h1>todo<span class=3D"green">&#10047;</span>today</h1>
+				<div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+   =20
+  =20
+		<div class=3D"row">
+			<div class=3D"col-12">
+				<input id=3D"userInput" type=3D"text" placeholder=3D"what do i need to =
+do today?" maxlength=3D"60">
+				<button id=3D"enter">&#10047;</button>
+			</div>
+		</div>
+
+		<!-- Empty list -->
+		<div class=3D"row">
+			<div class=3D"listItems col-12">
+				<ul class=3D"col-12 offset-0 col-sm-8 offset-sm-2">
+				</ul>
+			</div>
+		</div>
+
+	</div>
+=09
+
+
+</body></html>
+------MultipartBoundary--gvWJ8EXDK3bTIBYu6963LRBuoNZ7mjQSUvadCi6a27----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://caro.rodeo/projects/tt/todo_today.css
+
+@charset "windows-1252";
+
+body { background: rgb(255, 255, 255); text-align: center; font-family: Inc=
+onsolata, monotype; padding-bottom: 0px; }
+
+.intro { margin: 30px 0px; font-weight: bold; }
+
+h1 { color: rgb(255, 201, 228); text-transform: lowercase; font-size: 5em; =
+font-weight: 800; font-family: Inconsolata; margin: 0px auto 10px; }
+
+p { font-weight: 400; }
+
+#enter { border: 1px solid rgb(0, 0, 0); padding: 5px 10px; border-radius: =
+50px; color: rgb(255, 201, 228); background-color: rgb(0, 0, 0); transition=
+: all 0.75s ease 0s; font-weight: normal; }
+
+#enter:hover { background-color: rgb(255, 201, 228); color: rgb(0, 0, 0); }
+
+ul { display: inline-block; }
+
+ul { text-align: left; padding-inline-start: 0px; margin-block: 1em 5em; ma=
+rgin-inline: 20%; }
+
+li { list-style: none; padding: 10px 20px; color: rgb(0, 0, 0); font-weight=
+: 400; border: 1px solid rgb(0, 0, 0); border-radius: 5px; margin-bottom: 1=
+0px; background: rgb(255, 201, 228); transition: all 0.5s ease 0s; }
+
+li:hover { border: 1px solid rgb(81, 223, 112); background-color: rgb(0, 0,=
+ 0); color: rgb(255, 255, 255); }
+
+li > button { background: rgb(255, 201, 228); border-radius: 50px; border: =
+none; float: right; color: rgb(0, 0, 0); font-weight: 400; }
+
+input { border: 1px solid rgb(0, 0, 0); border-radius: 5px; min-width: 55%;=
+ padding: 5px; color: rgb(118, 207, 224); font-family: Inconsolata, monotyp=
+e; }
+
+::placeholder { color: rgb(0, 0, 0); font-family: Inconsolata, monotype; }
+
+:focus { outline: black solid 1px; color: white; }
+
+:focus::placeholder { font-family: Inconsolata, monotype; }
+
+#userInput { border: 1px solid black; color: black; }
+
+#userInput:focus { border: 0px solid black; background: rgb(81, 223, 112); =
+}
+
+::-webkit-input-placeholder { font-family: Inconsolata, monotype; }
+
+.done { color: rgb(0, 0, 0); background: rgb(81, 223, 112) !important; }
+
+.delete { display: none; }
+
+.green { color: rgb(81, 223, 112); }
+------MultipartBoundary--gvWJ8EXDK3bTIBYu6963LRBuoNZ7mjQSUvadCi6a27----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css2?family=Germania+One&family=Inconsolata&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: "Germania One"; font-style: normal; font-weight: =
+400; font-display: swap; src: url("https://fonts.gstatic.com/s/germaniaone/=
+v20/Fh4yPjrqIyv2ucM2qzBjeS3uywhPF6iqeg.woff2") format("woff2"); unicode-ran=
+ge: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308,=
+ U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215=
+, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Inconsolata; font-style: normal; font-weight: 400=
+; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.c=
+om/s/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4=
+U8WRL2l3WdycuJDETf.woff2") format("woff2"); unicode-range: U+102-103, U+110=
+-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+3=
+08-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inconsolata; font-style: normal; font-weight: 400=
+; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.c=
+om/s/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4=
+U8WRP2l3WdycuJDETf.woff2") format("woff2"); unicode-range: U+100-2AF, U+304=
+, U+308, U+329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0,=
+ U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inconsolata; font-style: normal; font-weight: 400=
+; font-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.c=
+om/s/inconsolata/v32/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp4=
+U8WR32l3WdycuJDA.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+1=
+52-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U=
++2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--gvWJ8EXDK3bTIBYu6963LRBuoNZ7mjQSUvadCi6a27------

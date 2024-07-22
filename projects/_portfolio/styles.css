@@ -1,0 +1,182 @@
+:root {
+    --emerald: rgb(12,176,116);
+  }
+  
+  * {
+    box-sizing: box-border;
+    margin: 0px;
+  }   
+  
+  body {
+    font-family: 'Roboto Mono', 'Inconsolata', monospace;
+  }
+  
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--emerald);
+    height: 6vw;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+  }
+  
+  #navbar > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 1.5rem;
+    gap: 3rem;
+    background-color: none;
+    width: 90%;
+    justify-content: flex-end;
+  }
+  
+  #navbar > ul > li > a {
+    color: #000000;
+    text-decoration: underline;
+  }
+  
+  #navbar > ul > li > a:hover {
+    text-decoration: none;
+  }
+  
+  a {
+      color: var(--emerald);
+      text-decoration: none;
+  }
+  
+  div {
+    text-align: center;
+  }
+  
+  #welcome-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: space-between;
+         background: rgb(12,176,116);
+  background: linear-gradient(180deg, rgba(12,176,116,1) 0%, rgba(203,229,195,1) 25%, rgba(255,244,216,1) 50%, rgba(203,229,195,1) 75%, rgba(155,216,175,1) 100%);
+  }
+  
+  #hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1vh;
+  }
+  
+  p {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  
+  a:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  
+  #arrow :hover {
+    text-decoration: none;
+  }
+  
+  #projects {
+    scroll-margin-top: 10vh;
+    border-top: 1px solid var(--emerald);
+   display: flex;
+   flex-direction: column;
+   background-color: #FFF4D8;
+  }
+  
+  #project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 8vh;
+  }
+
+  .project-tiles {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5vh;
+
+  }
+  
+  .project-tile {
+    width: 400px;
+    height: auto;
+  }
+
+  .project-tile img {
+    max-width: 400px;
+    opacity: 0.66;
+  }
+
+
+  .project-tile img:hover {
+    opacity: 1.0;
+  }
+
+  .about-project {
+    text-align: left;
+  }
+
+  .projects > ul {
+    list-style-type: '+ ';
+    display: inline-block;
+    margin-left: none;
+    font-weight: 100;
+  }
+
+  #cert-js {
+  margin-top: 5vh;
+}
+
+  footer {
+    background-color: var(--emerald);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer-content {
+    width: 95vw;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5vw;
+  }
+  
+  footer a {
+    color: #000000;
+    text-decoration:  underline;
+  }
+  
+  footer a:hover {
+    text-decoration: none;
+    color: #FFF4D8;
+  }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.3rem;
+    }
+  
+    h2 {
+      font-size: 1.1rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  
+  .project-tiles  img {
+    width: 90vw;
+  }
+  }
