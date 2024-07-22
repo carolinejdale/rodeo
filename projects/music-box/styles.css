@@ -8,7 +8,8 @@ body {
         rgb(247, 247, 247) 23.8%,
         rgb(238, 157, 157) 92%
         ); */
-    height: 100vh;
+    background-image: url("img/angelitas.jpg");
+    background-position: 40% 30%;height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -18,12 +19,11 @@ body {
     font-weight: 200;
     font-size: 1rem;
     color: #e03e11;
-    background-image: url("images/angelitas.jpg");
-    background-position: 40% 30%;
-}
+
+} 
 
 h1 {
-    font-family: 'Roboto Mono', 'Rye';
+    font-family: 'Roboto Mono', monospace;
     font-size: 3rem;
     font-style: italic;
     text-decoration-line: overline;
@@ -171,6 +171,13 @@ footer {
     bottom: 0;
     left: 5px;
     position: fixed;
-  /*  background-color: #fcb8b6; */
+    opacity: 80%;
+    color: #ff1e12;
     width: 100%;
+    background-color: #86B2DF;
+    opacity: 70%;
+}
+
+footer a {
+    color: #484e55;
 }
