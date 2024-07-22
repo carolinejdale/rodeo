@@ -1,0 +1,46 @@
+<!-- TO DO -->
+<!-- Re-center or remove .img-container::after -->
+<!-- Work out jS for -->
+<!-- RESOLVED -->
+<!-- Work out animation for pausing/playing -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M U S I C B O X</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>musicbox</h1>
+    <div class="music-container" id="music-container">
+        <div class="music-info">
+            <h4 id="title"></h4>
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+    
+        <audio src="./music/Il Sogno Del Marinaio - Partisian Song.mp3" id="audio"></audio>
+    
+
+    <div class="img-container">
+        <img src="./img/Il Sogno Del Marinaio - Partisian Song.jpg" alt="music-cover" id="cover" />
+    </div>
+
+    <div class="navigation">
+        <button id="prev" class="action-btn"><i class="fas fa-backward"></i></button>
+        <button id="play" class="action-btn action-btn-big"><i class="fas fa-play"></i></button>
+        <button id="next" class="action-btn"><i class="fas fa-forward"></i></button>
+    </div>
+</div>   
+<footer>background image courtesy of <a href="https://unsplash.com/photos/2-naked-women-ceramic-figurine-C_dSxETlS_4">allyssa olaivar</a> at <a href="unsplash.com">unsplash</a>. music from <a href="http://www.freemusicarchive.org">freemusicarchive.org</a></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
