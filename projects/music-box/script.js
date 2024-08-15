@@ -17,18 +17,7 @@ const songs = [
     'Dave Nelson - Whale Lines', 
     'Hawkin - Woods', 
     'Horse Lords - Outer East', 
-    'Il Sogno Del Marinaio - Partisian Song', 
-    /*
-'祭司 - アントネッロAntonello - 01 アントネッロAntonello', 
-'祭司 - アントネッロAntonello - 02 家Casa', 
-'祭司 - アントネッロAntonello - 03 空Cielo', 
-'祭司 - アントネッロAntonello - 04 風Brezza', 
-'祭司 - アントネッロAntonello - 05 海Mare', 
-'祭司 - アントネッロAntonello - 06 太陽Sole', 
-'祭司 - アントネッロAntonello - 07 雨Pioggia',
-'祭司 - アントネッロAntonello - 08 波Onde',
-'祭司 - アントネッロAntonello - 09 終わりFine',
-*/
+    'Il Sogno Del Marinaio - Partisian Song',
 ];
 
 // Keep track of songs
@@ -50,15 +39,17 @@ function pauseSong() {
     playBtn.querySelector('i.fas').classList.add('fa-play');
     playBtn.querySelector('i.fas').classList.remove('fa-pause');
 
+// Invoking the HTML5 audio.pause inbuilt method
     audio.pause();
 }
 
-// Play song
+// Function to play song
 function playSong() {
     musicContainer.classList.add('play');
     playBtn.querySelector('i.fas').classList.remove('fa-play');
     playBtn.querySelector('i.fas').classList.add('fa-pause');
 
+// Invoking the HTML5 audio.play inbuilt method
     audio.play();
 }
 
@@ -82,16 +73,19 @@ function prevSong() {
 function nextSong() {
     songIndex++;
 
+    // Checking if we're at the end of our playlist
     if (songIndex > songs.length - 1) {
         songIndex = 0;
     }
 
+    // Returning to start of playlist if so
     loadSong(songs[songIndex]);
 
     playSong();
 }
 
 function updateProgress(e) {
+    console.log(e.srcElement.currentTime);
     const { duration, currentTime } = e.srcElement;
     const progressPercent = (currentTime / duration) * 100;
     progress.style.width = `${progressPercent}%`;
@@ -104,7 +98,7 @@ function setProgress(e) {
     const clickX = e.offsetX;
     const duration = audio.duration;
     audio.currentTime = (clickX / width) * duration;
-
+    console.log(clickX);
 }
 
 //get duration & currentTime for Time of song
@@ -162,7 +156,6 @@ function DurTime (e) {
 	} 
 
 	// define seconds duration
-	
 	get_sec_d (duration);
 
 	// change duration DOM
@@ -171,7 +164,6 @@ function DurTime (e) {
 };
 
 // Event listeners
-
 playBtn.addEventListener('click', () => {
     const isPlaying = musicContainer.classList.contains('play');
 
