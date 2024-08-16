@@ -7,6 +7,9 @@ _drafts/
 # ignore contents of template directory
 _templates/
 
+# ignore contents of deprecated directory
+/projects/_deprecated
+
 # ignore automatically generated .DS_Store files - these may contain sensitive information
 .DS_Store
 
