@@ -13,4 +13,5 @@ deployment:
     - /bin/cp -R resources $DEPLOYPATH
     - /bin/cp -R prana $DEPLOYPATH
     - /bin/cp -R todo-today $DEPLOYPATH
+    - /bin/cp -R music-box $DEPLOYPATH
     - /bin/cp -R vss $DEPLOYPATH
