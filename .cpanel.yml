@@ -10,3 +10,7 @@ deployment:
     - /bin/cp styles.css $DEPLOYPATH
   # This command copies a directory and its contents from the Git root to the document root 
     - /bin/cp -R projects $DEPLOYPATH
+    - /bin/cp -R resources $DEPLOYPATH
+    - /bin/cp -R prana $DEPLOYPATH
+    - /bin/cp -R todo-today $DEPLOYPATH
+    - /bin/cp -R vss $DEPLOYPATH
