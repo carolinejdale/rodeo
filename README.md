@@ -3,8 +3,8 @@
 Hello, this is the readme file for my personal website.
 
 ## To do
-+ Push projects (FCC, Music Box, Prana) to cpanel
-+ Update projects page with more examples of recent work
++ ~~Push projects (FCC, Music Box, Prana) to cpanel~~
++ ~~Update projects page with more examples of recent work~~
 + Write summary for each project (skills, goals, roadblocks, future)
     + Web Application Server-Side Foundations coursework;
     + Music box
